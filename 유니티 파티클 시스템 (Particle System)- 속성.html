@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://notyu.tistory.com/59 -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="./유니티 파티클 시스템 (Particle System)- 속성_files/lightbox.min.css"><link rel="stylesheet" type="text/css" href="./유니티 파티클 시스템 (Particle System)- 속성_files/font.css"><link rel="stylesheet" type="text/css" href="./유니티 파티클 시스템 (Particle System)- 속성_files/content.css"><!--[if lt IE 9]><script src="https://t1.daumcdn.net/tistory_admin/lib/jquery/jquery-1.12.4.min.js"></script><![endif]--><!--[if gte IE 9]>
+<!--><script src="./유니티 파티클 시스템 (Particle System)- 속성_files/jquery-3.2.1.min.js.다운로드"></script><!--<![endif]-->
+<script src="./유니티 파티클 시스템 (Particle System)- 속성_files/lightbox-plus-jquery.min.js.다운로드"></script>
+<script>
+lightbox.options.fadeDuration = 200;
+lightbox.options.resizeDuration = 200;
+lightbox.options.wrapAround = false;
+lightbox.options.albumLabel = "%1 / %2";
+</script>
+<script>var tjQuery = jQuery.noConflict(true);</script><style type="text/css">.tt_article_useless_p_margin p {padding-top:0 !important;padding-bottom:0 !important;margin-top:0 !important;margin-bottom:0 !important;}</style><meta name="referrer" content="always"><link rel="icon" href="https://t1.daumcdn.net/tistory_admin/static/top/favicon_0630.ico"><link rel="apple-touch-icon" href="https://img1.daumcdn.net/thumb/C180x180/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F241F093D5701E73803">
+<link rel="apple-touch-icon" sizes="76x76" href="https://img1.daumcdn.net/thumb/C76x76/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F241F093D5701E73803">
+<link rel="apple-touch-icon" sizes="120x120" href="https://img1.daumcdn.net/thumb/C120x120/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F241F093D5701E73803">
+<link rel="apple-touch-icon" sizes="152x152" href="https://img1.daumcdn.net/thumb/C152x152/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F241F093D5701E73803">
+<meta name="google-adsense-platform-account" content="ca-host-pub-9691043933427338">
+<meta name="google-adsense-platform-domain" content="tistory.com">
+<meta name="description" content="1. 유니티 파티클 시스템 유니티 파티클 시스템은 작고 간단한 이미지나 메쉬를 대량으로 표현하는 데 사용하도록 만들어진 시스템이다. 파티클은 움직이도록 제어할 수도 있으며, 크기, 방향, 모양 등을 설정하여..">
+
+<!-- BEGIN OPENGRAPH -->
+<link rel="canonical" href="https://notyu.tistory.com/59"><meta property="og:type" content="article"><meta property="og:url" content="https://notyu.tistory.com/59"><meta property="og:article:author" content="노튜"><meta property="og:site_name" content="Notyu"><meta property="og:title" content="유니티 파티클 시스템 (Particle System)- 속성"><meta name="by" content="노튜"><meta property="og:description" content="1. 유니티 파티클 시스템 유니티 파티클 시스템은 작고 간단한 이미지나 메쉬를 대량으로 표현하는 데 사용하도록 만들어진 시스템이다. 파티클은 움직이도록 제어할 수도 있으며, 크기, 방향, 모양 등을 설정하여.."><meta property="og:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcS3Fg8%2FbtqOnzhimS0%2FzaAOPsIidTr9ItApKcglg0%2Fimg.png">
+<!-- END OPENGRAPH -->
+
+
+
+<!-- BEGIN TWITTERCARD -->
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@TISTORY"><meta name="twitter:title" content="유니티 파티클 시스템 (Particle System)- 속성"><meta name="twitter:description" content="1. 유니티 파티클 시스템 유니티 파티클 시스템은 작고 간단한 이미지나 메쉬를 대량으로 표현하는 데 사용하도록 만들어진 시스템이다. 파티클은 움직이도록 제어할 수도 있으며, 크기, 방향, 모양 등을 설정하여.."><meta property="twitter:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcS3Fg8%2FbtqOnzhimS0%2FzaAOPsIidTr9ItApKcglg0%2Fimg.png">
+<!-- END TWITTERCARD -->
+
+
+
+<!-- BEGIN DAUMAPP -->
+<meta property="dg:plink" content="https://notyu.tistory.com/59"><meta name="plink" content="https://notyu.tistory.com/59"><meta name="title" content="유니티 파티클 시스템 (Particle System)- 속성"><meta name="article:media_name" content="Notyu"><meta property="article:mobile_url" content="https://notyu.tistory.com/m/59"><meta property="article:pc_url" content="https://notyu.tistory.com/59"><meta property="article:mobile_view_url" content="https://notyu.tistory.com/m/59"><meta property="article:pc_view_url" content="https://notyu.tistory.com/59"><meta property="article:talk_channel_view_url" content="https://notyu.tistory.com/m/59"><meta property="article:pc_service_home" content="https://www.tistory.com"><meta property="article:mobile_service_home" content="https://www.tistory.com/m"><meta property="article:txid" content="3675921_59"><meta property="article:published_time" content="2020-11-27T16:34:05+09:00"><meta property="og:regDate" content="20201127163405"><meta property="article:modified_time" content="2021-01-11T17:55:10+09:00">
+<!-- END DAUMAPP -->
+
+
+
+<!-- BEGIN STRUCTURED_DATA -->
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BlogPosting","mainEntityOfPage":{"@id":"https:\/\/notyu.tistory.com\/59"},"url":"https:\/\/notyu.tistory.com\/59","headline":"\uc720\ub2c8\ud2f0 \ud30c\ud2f0\ud074 \uc2dc\uc2a4\ud15c (Particle System)- \uc18d\uc131","description":"1. \uc720\ub2c8\ud2f0 \ud30c\ud2f0\ud074 \uc2dc\uc2a4\ud15c \uc720\ub2c8\ud2f0 \ud30c\ud2f0\ud074 \uc2dc\uc2a4\ud15c\uc740 \uc791\uace0 \uac04\ub2e8\ud55c \uc774\ubbf8\uc9c0\ub098 \uba54\uc26c\ub97c \ub300\ub7c9\uc73c\ub85c \ud45c\ud604\ud558\ub294 \ub370 \uc0ac\uc6a9\ud558\ub3c4\ub85d \ub9cc\ub4e4\uc5b4\uc9c4 \uc2dc\uc2a4\ud15c\uc774\ub2e4. \ud30c\ud2f0\ud074\uc740 \uc6c0\uc9c1\uc774\ub3c4\ub85d \uc81c\uc5b4\ud560 \uc218\ub3c4 \uc788\uc73c\uba70, \ud06c\uae30, \ubc29\ud5a5, \ubaa8\uc591 \ub4f1\uc744 \uc124\uc815\ud558\uc5ec..","author":{"@type":"Person","name":"\ub178\ud29c"},"image":{"@type":"ImageObject","url":"https:\/\/img1.daumcdn.net\/thumb\/R800x0\/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcS3Fg8%2FbtqOnzhimS0%2FzaAOPsIidTr9ItApKcglg0%2Fimg.png","width":"800px","height":"800px"},"datePublished":"20201127T16:34:05+09:00","dateModified":"20210111T17:55:10+09:00","publisher":{"@type":"Organization","name":"TISTORY","logo":{"@type":"ImageObject","url":"https:\/\/t1.daumcdn.net\/tistory_admin\/static\/images\/openGraph\/opengraph.png","width":"800px","height":"800px"}}}</script><meta name="robots" content="max-image-preview:large">
+<!-- END STRUCTURED_DATA -->
+
+
+
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<title>유니티 파티클 시스템 (Particle System)- 속성</title>
+<link rel="stylesheet" href="./유니티 파티클 시스템 (Particle System)- 속성_files/style.css">
+<script src="./유니티 파티클 시스템 (Particle System)- 속성_files/jquery-1.12.4.min.js.다운로드"></script>
+<style type="text/css">
+
+.entry-content a, .post-header h1 em, .comments h2 .count {color:#04beb8}
+.comment-form .submit button:hover, .comment-form .submit button:focus {background-color:#04beb8}
+
+
+
+</style>
+
+<style type="text/css">
+		#daumSearchBox {
+			height: 21px;
+			background-image : url(//i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bg_search2_2.gif);
+			margin: 5px auto ;
+			padding: 0;
+		}
+		#daumSearchBox input {
+			background: none;
+			margin : 0;
+			padding : 0;
+			border : 0;
+		}
+		#daumSearchBox #daumLogo {
+			width: 34px;
+			height: 21px;
+			float: left;
+			margin-right: 5px;
+			background-image : url(//i1.daumcdn.net/img-media/tistory/img/bg_search1_2_2010ci.gif);
+		}
+		#daumSearchBox #show_q {
+			background-color: transparent;
+			border: none;
+			font: 12px Gulim, Sans-serif;
+			color: #555;
+			margin-top: 4px;
+			margin-right: 15px;
+			float: left;
+		}
+
+		#daumSearchBox #show_btn {
+			background-image : url(//i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bt_search_2.gif);
+			width: 37px;
+			height: 21px;
+			float: left;
+			margin:0;
+			cursor:pointer;
+			text-indent:-1000em;
+		}
+	</style>
+<link rel="stylesheet" type="text/css" href="./유니티 파티클 시스템 (Particle System)- 속성_files/style(1).css">
+<script type="text/javascript" src="./유니티 파티클 시스템 (Particle System)- 속성_files/profile.js.다운로드"></script>
+	<style type="text/css">
+		.another_category { border: 1px solid #E5E5E5; padding: 10px 10px 5px; margin:10px 0; clear: both; }
+		.another_category h4 { font-size: 12px !important; margin: 0 !important; border-bottom: 1px solid #E5E5E5 !important; padding: 2px 0 6px !important; }
+		.another_category h4 a { font-weight: bold !important; }
+		.another_category table { table-layout: fixed; border-collapse: collapse; width: 100% !important; margin-top: 10px !important; }
+		* html .another_category table { width: auto !important; }
+		*:first-child+html .another_category table { width: auto !important; }
+		.another_category th, .another_category td { padding: 0 0 4px !important; }
+		.another_category th { text-align: left; font-size: 12px !important; font-weight: normal;  word-break: break-all; overflow: hidden; line-height: 1.5; }
+		.another_category td { text-align: right; width: 80px; font-size: 11px; }
+		.another_category th a { font-weight: normal; text-decoration: none; border: none !important; }
+		.another_category th a.current{ font-weight: bold; text-decoration: none !important; border-bottom: 1px solid !important; }
+		.another_category th span { font-weight: normal; text-decoration: none; font: 10px Tahoma, Sans-serif; border: none !important; }
+
+		.another_category_color_gray, .another_category_color_gray h4 { border-color: #E5E5E5 !important; }
+		.another_category_color_gray * { color: #909090 !important; }
+		.another_category_color_gray th a.current{border-color:#909090 !important;}
+		.another_category_color_gray h4, .another_category_color_gray h4 a { color: #737373 !important; }
+
+
+		.another_category_color_red, .another_category_color_red h4 { border-color: #F6D4D3 !important;  }
+		.another_category_color_red * { color: #E86869 !important; }
+		.another_category_color_red th a.current{border-color:#E86869 !important;}
+		.another_category_color_red h4, .another_category_color_red h4 a { color: #ED0908 !important; }
+
+
+		.another_category_color_green, .another_category_color_green h4 { border-color: #CCE7C8 !important; }
+		.another_category_color_green * { color: #64C05B !important; }
+		.another_category_color_green th a.current{border-color:#64C05B !important;}
+		.another_category_color_green h4, .another_category_color_green h4 a { color: #3EA731 !important; }
+
+
+		.another_category_color_blue, .another_category_color_blue h4 { border-color: #C8DAF2 !important; }
+		.another_category_color_blue * { color: #477FD6 !important; }
+		.another_category_color_blue th a.current{border-color:#477FD6 !important;}
+		.another_category_color_blue h4, .another_category_color_blue h4 a { color: #1960CA !important; }
+
+
+		.another_category_color_violet, .another_category_color_violet h4 { border-color: #E1CEEC !important;  }
+		.another_category_color_violet * { color:#9D64C5 !important; }
+		.another_category_color_violet th a.current{border-color:#9D64C5 !important;}
+		.another_category_color_violet h4, .another_category_color_violet h4 a { color: #7E2CB5 !important; }
+	</style>
+<script type="text/javascript">
+        
+        window.TistoryBlog = {
+            basePath: "",
+            url: "https://notyu.tistory.com",
+            tistoryUrl: "https://notyu.tistory.com",
+			manageUrl: 'https://notyu.tistory.com/manage',
+            token: '4CK457jAfEOO+Pl/Uc/u3Q=='
+        };
+        var servicePath = "";
+        var blogURL = "";
+    </script>
+
+	<script> (function() { window.orgjQuery = window.jQuery; window.jQuery = tjQuery })()</script>
+    <script type="text/javascript" defer="" src="./유니티 파티클 시스템 (Particle System)- 속성_files/reaction-button-container.min.js.다운로드"></script>
+    <script> (function() { window.jQuery = window.orgjQuery; delete window.orgjQuery })()</script>
+        <script type="text/javascript" src="./유니티 파티클 시스템 (Particle System)- 속성_files/base.js.다운로드"></script>
+        <link rel="stylesheet" type="text/css" href="./유니티 파티클 시스템 (Particle System)- 속성_files/dialog.css">
+            <link rel="stylesheet" type="text/css" href="./유니티 파티클 시스템 (Particle System)- 속성_files/font(1).css">
+    <link rel="stylesheet" type="text/css" href="./유니티 파티클 시스템 (Particle System)- 속성_files/postBtn.css">
+        <link rel="stylesheet" type="text/css" href="./유니티 파티클 시스템 (Particle System)- 속성_files/tistory.css">
+        <script type="text/javascript" src="./유니티 파티클 시스템 (Particle System)- 속성_files/kakao.min.js.다운로드"></script>
+
+        <link rel="stylesheet" type="text/css" href="./유니티 파티클 시스템 (Particle System)- 속성_files/revenue.css"><style type="text/css">.adfit__tag-button{-webkit-tap-highlight-color:transparent;-webkit-box-direction:normal;-webkit-font-feature-settings:"tnum";font-feature-settings:"tnum";border:1px solid transparent;border-radius:2px;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;display:inline-block;font-family:sans-serif;font-size:10px;font-variant:tabular-nums;height:auto;letter-spacing:0;line-height:18px;list-style:none;margin:4px 4px 0 0;opacity:.9;padding:0 7px;white-space:nowrap}.adfit__tag-button,.adfit__tag-button--yellow{background-color:#fa8c16}.adfit__tag-button--purple{background-color:#722ed1}.adfit__tag-button--blue{background-color:#108ee9}.adfit__tag-button--orange{background-color:#f50}.adfit__tag-button--green{background-color:#8bc34a}</style><style type="text/css">.adfit__debug-toolbar{position:absolute;z-index:9999999}.adfit__debug-toolbar--top{right:0;top:0}.adfit__debug-toolbar--bottom{bottom:4px;right:0}</style><style type="text/css">.adfit__border{position:absolute}.adfit__border--left{height:100%;left:0;top:0;width:1px}.adfit__border--right{height:100%;right:0;top:0;width:1px}.adfit__border--top{height:1px;left:0;top:0;width:100%}.adfit__border--bottom{bottom:0;height:1px;left:0;width:100%}</style><style type="text/css">.adfit__swipeable{height:100%;left:0;position:absolute;top:0;width:100%;z-index:999999}</style><style type="text/css">.adfit__a11y-layer{pointer-events:none}.adfit__a11y-layer__hint{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJ4AAAA6CAYAAABBCOCDAAAM3UlEQVR4AeyaA5Qjyx6Hx1rb1sXaGq9t27Zt27Zt27Y3djJKJsNoXv9mT83r7e1MMquHW33Ot5uurnTVdH8p/KtcuIdRXf9vg6LOcoMy9K1eGWLUK0KS0gqFAnfgEFyCUwwubFI+JCW19WIyrmGw/swKUChwCm7BMQYXgH+AF5Ph6pdMIbZNq//W16qeRZYxg6eAaQQ/pxUKBe7AIbgEp+AWHINrKeLBRlwQvPQ31wvNrviZFaBQ4BTcgmNwjeHLmA5NIayk0v1KqHxwDK7BORcM/mAimsRfWTCFAsfgGpxDN/sWJ+iPf2WhFAocg2twzoWETOhEgvKrgWMk1OKCD+B3FEyhEN+oeBQqHoWKR6FQ8ShUPAqFikeh4v3jqFwhk1QtCLRWq5JZRtIaNGigOHLkSDQfM2bMCLN3r7Zt2ypbtGihdFRmgQIFRP7+/jI+KlSoIGXnK1y48Fe4ubklX/v48WPCokWLIv7x4pUvk1GK8vkI8s8qd/Y+Y4cX0Q3sW1D7s+t372q1eOWnIAubAvl9RFUrZ5ZxV3zw8idOnKjjgpd98+bNWHtl4Nq5c+eMjuoyevRorVqtNnOJi4uzvnr1Kp7kQxpz2OLj460mk8mWxBxVq1aV9ujRQx0REWFesWIFEY+K9/pBzcRZk4uHsylSyFfs7H0+v/A3379WPeFn1w+CBQdklYMFM0pGRMqCbW5urp/5xOvfv78GL/nNmzfxEIHN1q1bo35MPPvs2rVLzxVv8eLFyXJ17txZhTr16dNH/fbt2wSIyBKPinfmUMUYe3maNsyhfHi9ekKf7vk0+F/xMdCyeU1pvbu7a/L1K6cqx0EInSjYiusZ0rsLkJ4po6dg27q/DdJ3AZbnd2sk9utZQMO9Z+d2edR3L1eL37GhtIFbbno/d0HZvzNI0PK2apZLdXBnOSN+ILiWmnjoWg8ePGhgAzlSE+/Tp08Jc+bMCedSv379lFa/W7duarSeXPR6vcWReNmzZxfiXCqVmljiUfE+Pfc372RePmHJvFKRKQ+8Y1418qg+B1p3bSxtQF6cN66fQ4nrI4cU1ik/BVrR6k0aXTTM2/vLeObYvvJGjMPQUl0+VTkW32lUL4eCfU/5+0ALvjd3eolvXkbDutkVyBMuCbZ9fF7bhM+zpiDft+K5urp+Llu2rGTMmDFaPoYPH65FHuTlgjHXpUuXjHz069dPTfKNHDlSa2OOnj17qrk0a9ZMwRZv7dq1kblz5xYOGjRIA/GGDBmiYQ6z1WqlLV5qY7w3j2qZuOItX1AqCue9uubT4HzU0MI6e11tsSJ+YuRZPLdUZO5c3qISxfzEYeJg6+Hd5Yzse144USmWtJxcIHCunN5CCAN5I6TBNozv+MRDK5fkxOHl5fVVGRj0OwLls8VDK8aHr6+vgIjHLRc/ioYNGyp0Oh0d43G7WoydCHjYXPHQ1eIc4y2cTxpTNMyeeGjZ+IR+xHSv7HsO6ud4QtKyaU4lNjGOGExE/1a89OnTC2rXri1DC8NHhw4dVFmzZhVy700G/6kdFy5cMCIvJgcikSjRHnnz5hUhX4YMGQSZMmX6CqTTrjaNYzwiCf7HeZA/v3gYs5HzKhUzJd937bK/oooW9hMDtHqYsPDdkw8fH7fPC2eXioySh9jWL/9TjzR74hExbt++HctFq9Wanz17Fs9XRunSpSVojQhorfbu3atnpyEcktbnii768OHDBm66QCBIXLJkCRWPiAdxdm8uE82mZrXMMmfFe/+0lgmhjo5t86g9Pd2Su0l0128f1zKh9evYJrcKk4+hAwppnRUPYzyMK/v3IpOS1MVDLO78+fNGLgqFwkTEc4RMJjOtWrUqkpvepUsXFSYMjiDxOnxmJDY5KI+Kx0eHNrnVzoq3cGbJCLRMSM+c6cumVoj7ipmFIk3LSLdrU5lodOHOigeyZ/ci3aND8TCJYHpG25QpU8K4DB06VIOyv1c85vvaffv2GRzh7u6eIp7RaLRMmzYtjEv37t3VdOXiJ+Ll5ZYcAuGmY3KBFvBnr1ygNWSvXGB2ifCGPXx8fBzelwmrJC5duvSHu0KEXk6ePBnNx/z588OpeHxQ6FothULFo1DxKBQqHoWKlydPHlGlSpWkIEeOHMLMmTMLnjx5Ele5cmUpZmzYJoR81atXl9asWVNGKFeunATpvXv3VsfGxloRfbdXBmaHCKqyl5+OHTsWzd3h4enpmVwOiegDvj1pxYoVE2NLEx+5cuUSknx//fWXpGPHjio+yGK+PUqUKCEuX768hB1SQSD3/fv3/15tadRIcevWrVg+tm/frmffD+f379+PA61atVIirWvXrio8OzxzR+8JZTO7aBLYzxRLbmxIUJy8j/9q8aZOnRoWFRVlAYieQz4s+4SGhsoRSEUcCfmwV8xoNFqxdgiwQ4O9wyO1PxQbLpEHwpI0BGqvXbsWQ87z588vgujMYUVexNLsLRvduXMnFktXqDOXSZMm6dirAU+fPo3ngj1u2B2S2rYlxPeYutju3r0bi+U1pCNeJ5FIEkk+bF1CXQcPHqzp1auXmk3z5s2T5cKPKCQkRI56LViwIBwgdIJngXAOvk/EY+qrgTR88UOULRQKU8rGO0hiHdhMwK7Tf7V4iNxPmDBBx6Zx48YKe+LhOvceRLxRo0ZpsbPW3o5d5EELYU+8bdu2RTEv1YSWcfLkyTqLxWIrUqSI2J54J06ciP4p++E4oCVEXdu1a6dEL2AwGCz4u1MTD8tkqCubggULikgLJJfLTVwePXoUR8QrVKiQCC0YdqTg3Fnx/kW9HYPEdkRhHC/tLO0r0R4rQSuttLOvLa20tBNsFFFQxUJQUASxsREVbe2sRDDhJb4XScy66uYmWYOB7C8wMgxzdTcIcRcOz71vdu/szP+c883cMypaVC8zjts24KkfM4mxTUxM/PJfwJOCRM+yNKHNzMxMpQw8kwE+f3tILuLY/S8Dr1arvVxeXtZTIxFCu/Hx8Z9zUVEkKwNvaWmp2oiIL+G9Poru5eDlX0qaYjnjs+6pdMrnXA/gea2srDy0Cp7ombZrC/DY2NjYT43BKJQJDQwM3IRUe3h4+JuwH4PnIbbKDY+agAC0ZlKtB+/anJ2dFTF4UrfqX2lH6vS9MYgGtgw8OlTKSq2rq+v7tB5Oqkutr6/vx1xf9/b2ag0d9nsMIo2ZA48m9bsZcDxrDe9DemaePojmsonxNBayQwCPrqVNPxI8hQ5zc3P3nxI8P9aEz87OVlRY3N7e/uWajhP+RVG8gsdblWKbcCCp0hWR3gOPwAft0dFRUa/X/+7v778J4JlQ3yFNVCqV17ozE0rrTU1N3ZWBJ7pNT0//mtrIyMi3GDyRc3Jy8i5nuT4reY/h2t/fr52fn/+Rgre2tvYvaMGMFZ0VX2N+i0ge9OfOzs4TGaHKJdV4Hwkencm5PiV4KiikrCDudVg0yKXaYN3d3V+IdoNIDIuYDrUY4NwpKw/Rr6+vn/2/io9qtfpi0NNUe3x8XJhg1RrurQ+Dg4M3OfA8UFfzljNSIbSj00QvBgIwh/csXgHH6RmsdJeVov4vLy9XU/DoP1XEwYylSaeb4+sg8j3GbHt7+2l+fv4+OJ9VM7lD38Xgaa/0vbe39wcrYDsIzYDne9oi1dJSTjxtbGw8Sq1+mFRVBt7CwkLVpJhE2wIipPerq6vZgzFA4OlSadgGabyetU/BAzztdXFx8ac+nZ6eFh9ZDLm4uFgF0XvtTDpHEYGtsvXf1kou1aoskc60DVrNabGTk5Oip6fnS1rFsr6+/sBxg9HMuYgXv8gRzpQDz/xYpctEHFpWahuNR1/YYzIx0mLZdopqXJDRPPHnDbz26d5b8GiW7hvSPyl4TCQAGK0HgBx4op2o8ZYZfHovvmaCRPe0rQibkyDStr1DUce1HHhKp4wJSWDsZA2rYnrO/eLvNJZlC5EAns8PDQ19pbVFOUGgLNU6EwJcUJI7o6Oj36ym2wa81MrA492qbekyaUOECkfweHxHR0dL90nAK7UUPE6ytbX1pgG3xXq4piwFz1aJsQKwvUqOQ1sR9nRoCt7u7u7T8PDw12CcKAav3FLwyq1twRNpwEbjOMLHq2J9t7m5+Qg+od6/FiUhKrRiVo8HBwdNnU29urqqWwD5+/80oFjUxNekR9rUeNjzk6al1FQ/asOBctbZ2fldM/e2A/BeO85godN24P3T3h1gOgyEYRQNyA7fcrO0J/0vDS2gUh04OIMq4Go6gQ9uhwfCQ3ggPIQHwkN4CM+k1BImpYzoLWFEb8lsKGZD1wwlYyh5jt9Pw2MavuM8//b58BhnVfaT2PP4zoUDF4kaqqWaqq1x1NrYiu6yP2v870vwLTVVW1d06XjT87c/f908rlct8KnaqaFaqqmxvXoATDd9iVUsk/wAAAAASUVORK5CYII=");background-position:50%;background-repeat:no-repeat;background-size:158px 58px;height:100%;left:0;position:absolute;top:0;width:100%}</style><style type="text/css">.adfit__html-banner{max-height:inherit;overflow:hidden;position:relative}.adfit__html-banner__inner{border:0;display:block;margin:0 auto;overflow:hidden}.adfit__html-banner--responsive>.adfit__html-banner__inner{height:0}.adfit__html-banner--responsive>.adfit__html-banner__inner iframe{height:100%;left:0;max-height:inherit;position:absolute;top:0;width:100%}</style><style type="text/css">.adfit__tag-button{-webkit-tap-highlight-color:transparent;-webkit-box-direction:normal;-webkit-font-feature-settings:"tnum";font-feature-settings:"tnum";border:1px solid transparent;border-radius:2px;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;display:inline-block;font-family:sans-serif;font-size:10px;font-variant:tabular-nums;height:auto;letter-spacing:0;line-height:18px;list-style:none;margin:4px 4px 0 0;opacity:.9;padding:0 7px;white-space:nowrap}.adfit__tag-button,.adfit__tag-button--yellow{background-color:#fa8c16}.adfit__tag-button--purple{background-color:#722ed1}.adfit__tag-button--blue{background-color:#108ee9}.adfit__tag-button--orange{background-color:#f50}.adfit__tag-button--green{background-color:#8bc34a}</style><style type="text/css">.adfit__debug-toolbar{position:absolute;z-index:9999999}.adfit__debug-toolbar--top{right:0;top:0}.adfit__debug-toolbar--bottom{bottom:4px;right:0}</style><style type="text/css">.adfit__border{position:absolute}.adfit__border--left{height:100%;left:0;top:0;width:1px}.adfit__border--right{height:100%;right:0;top:0;width:1px}.adfit__border--top{height:1px;left:0;top:0;width:100%}.adfit__border--bottom{bottom:0;height:1px;left:0;width:100%}</style><style type="text/css">.adfit__swipeable{height:100%;left:0;position:absolute;top:0;width:100%;z-index:999999}</style><style type="text/css">.adfit__a11y-layer{pointer-events:none}.adfit__a11y-layer__hint{background-image:url("data:image/png;base64,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");background-position:50%;background-repeat:no-repeat;background-size:158px 58px;height:100%;left:0;position:absolute;top:0;width:100%}</style><style type="text/css">.adfit__html-banner{max-height:inherit;overflow:hidden;position:relative}.adfit__html-banner__inner{border:0;display:block;margin:0 auto;overflow:hidden}.adfit__html-banner--responsive>.adfit__html-banner__inner{height:0}.adfit__html-banner--responsive>.adfit__html-banner__inner iframe{height:100%;left:0;max-height:inherit;position:absolute;top:0;width:100%}</style><style type="text/css">.adfit__tag-button{-webkit-tap-highlight-color:transparent;-webkit-box-direction:normal;-webkit-font-feature-settings:"tnum";font-feature-settings:"tnum";border:1px solid transparent;border-radius:2px;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;display:inline-block;font-family:sans-serif;font-size:10px;font-variant:tabular-nums;height:auto;letter-spacing:0;line-height:18px;list-style:none;margin:4px 4px 0 0;opacity:.9;padding:0 7px;white-space:nowrap}.adfit__tag-button,.adfit__tag-button--yellow{background-color:#fa8c16}.adfit__tag-button--purple{background-color:#722ed1}.adfit__tag-button--blue{background-color:#108ee9}.adfit__tag-button--orange{background-color:#f50}.adfit__tag-button--green{background-color:#8bc34a}</style><style type="text/css">.adfit__debug-toolbar{position:absolute;z-index:9999999}.adfit__debug-toolbar--top{right:0;top:0}.adfit__debug-toolbar--bottom{bottom:4px;right:0}</style><style type="text/css">.adfit__border{position:absolute}.adfit__border--left{height:100%;left:0;top:0;width:1px}.adfit__border--right{height:100%;right:0;top:0;width:1px}.adfit__border--top{height:1px;left:0;top:0;width:100%}.adfit__border--bottom{bottom:0;height:1px;left:0;width:100%}</style><style type="text/css">.adfit__swipeable{height:100%;left:0;position:absolute;top:0;width:100%;z-index:999999}</style><style type="text/css">.adfit__a11y-layer{pointer-events:none}.adfit__a11y-layer__hint{background-image:url("data:image/png;base64,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");background-position:50%;background-repeat:no-repeat;background-size:158px 58px;height:100%;left:0;position:absolute;top:0;width:100%}</style><style type="text/css">.adfit__html-banner{max-height:inherit;overflow:hidden;position:relative}.adfit__html-banner__inner{border:0;display:block;margin:0 auto;overflow:hidden}.adfit__html-banner--responsive>.adfit__html-banner__inner{height:0}.adfit__html-banner--responsive>.adfit__html-banner__inner iframe{height:100%;left:0;max-height:inherit;position:absolute;top:0;width:100%}</style><style type="text/css">.adfit__tag-button{-webkit-tap-highlight-color:transparent;-webkit-box-direction:normal;-webkit-font-feature-settings:"tnum";font-feature-settings:"tnum";border:1px solid transparent;border-radius:2px;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;display:inline-block;font-family:sans-serif;font-size:10px;font-variant:tabular-nums;height:auto;letter-spacing:0;line-height:18px;list-style:none;margin:4px 4px 0 0;opacity:.9;padding:0 7px;white-space:nowrap}.adfit__tag-button,.adfit__tag-button--yellow{background-color:#fa8c16}.adfit__tag-button--purple{background-color:#722ed1}.adfit__tag-button--blue{background-color:#108ee9}.adfit__tag-button--orange{background-color:#f50}.adfit__tag-button--green{background-color:#8bc34a}</style><style type="text/css">.adfit__debug-toolbar{position:absolute;z-index:9999999}.adfit__debug-toolbar--top{right:0;top:0}.adfit__debug-toolbar--bottom{bottom:4px;right:0}</style><style type="text/css">.adfit__border{position:absolute}.adfit__border--left{height:100%;left:0;top:0;width:1px}.adfit__border--right{height:100%;right:0;top:0;width:1px}.adfit__border--top{height:1px;left:0;top:0;width:100%}.adfit__border--bottom{bottom:0;height:1px;left:0;width:100%}</style><style type="text/css">.adfit__swipeable{height:100%;left:0;position:absolute;top:0;width:100%;z-index:999999}</style><style type="text/css">.adfit__a11y-layer{pointer-events:none}.adfit__a11y-layer__hint{background-image:url("data:image/png;base64,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");background-position:50%;background-repeat:no-repeat;background-size:158px 58px;height:100%;left:0;position:absolute;top:0;width:100%}</style><style type="text/css">.adfit__html-banner{max-height:inherit;overflow:hidden;position:relative}.adfit__html-banner__inner{border:0;display:block;margin:0 auto;overflow:hidden}.adfit__html-banner--responsive>.adfit__html-banner__inner{height:0}.adfit__html-banner--responsive>.adfit__html-banner__inner iframe{height:100%;left:0;max-height:inherit;position:absolute;top:0;width:100%}</style><style type="text/css">#DragSchLayer{display:block;position:absolute;z-index:1000;width:61px;height:31px;margin:-30px 0px 0px -5px;background:url(//search1.daumcdn.net/search/statics/common/pi/btn_drag_rect.png);cursor:pointer}             @media             only screen and (-webkit-min-device-pixel-ratio: 1.5),             only screen and (min-device-pixel-ratio: 1.5),             only screen and (min-resolution: 1.5dppx) {             #DragSchLayer{background-image:url(//search1.daumcdn.net/search/statics/common/pi/r2/btn_drag_rect.png);background-size:61px 31px}}            </style></head>
+<body id="tt-body-page" class="layout-aside-right paging-number">
+<script type="text/javascript">
+	(function() {
+		if (!window.T) {
+			window.T = {}
+		}
+		window.T.config = {"TOP_SSL_URL":"https:\/\/www.tistory.com","PREVIEW":false,"ROLE":"guest","PREV_PAGE":"\/60","NEXT_PAGE":"\/58","BLOG":{"isDormancy":false,"title":"Notyu"},"NEED_COMMENT_LOGIN":false,"COMMENT_LOGIN_CONFIRM_MESSAGE":"","LOGIN_URL":"https:\/\/www.tistory.com\/auth\/login\/?redirectUrl=http%3A%2F%2Fnotyu.tistory.com%2F59","DEFAULT_URL":"https:\/\/notyu.tistory.com","USER":{"name":null,"homepage":null},"ROLE_GROUP":"visitor","SUBSCRIPTION":{"status":"none","isConnected":false,"isProcessing":false,"isPending":false,"isWait":false,"isNone":true},"IS_LOGIN":false,"HAS_BLOG":false,"TOP_URL":"https:\/\/www.tistory.com","JOIN_URL":"https:\/\/www.tistory.com\/member\/join"};
+		window.appInfo = {"domain":"tistory.com","topUrl":"https:\/\/www.tistory.com","loginUrl":"https:\/\/www.tistory.com\/auth\/login","logoutUrl":"https:\/\/www.tistory.com\/auth\/logout"};
+
+        window.initData = {};
+        
+	})();
+</script>
+
+<script type="text/javascript" src="./유니티 파티클 시스템 (Particle System)- 속성_files/common.js.다운로드"></script>
+<div style="margin:0; padding:0; border:none; background:none; float:none; clear:none; z-index:0"></div>
+<div id="acc-nav">
+	<a href="https://notyu.tistory.com/59#content">본문 바로가기</a>
+</div>
+<div id="wrap">
+	<header id="header">
+		<div class="inner">
+			<h1>
+				<a href="https://notyu.tistory.com/">
+					
+					
+						Notyu
+					
+				</a>
+			</h1>
+			<div class="util">
+				<div class="search">
+					
+						<input type="text" name="search" value="" placeholder="검색내용을 입력하세요." onkeypress="if (event.keyCode == 13) { try{window.location.href=&#39;/search/&#39;+looseURIEncode(document.getElementsByName(&#39;search&#39;)[0].value);document.getElementsByName(&#39;search&#39;)[0].value=&#39;&#39;;return false;}catch(e){} }">
+						<button type="submit" onclick="try{window.location.href=&#39;/search/&#39;+looseURIEncode(document.getElementsByName(&#39;search&#39;)[0].value);document.getElementsByName(&#39;search&#39;)[0].value=&#39;&#39;;return false;}catch(e){}">검색</button>
+					
+				</div>
+				<div class="profile">
+					<button type="button"><img src="./유니티 파티클 시스템 (Particle System)- 속성_files/default_L.png" alt="블로그 이미지"></button>
+					<nav>
+						<ul>
+							<li><a href="https://notyu.tistory.com/manage">관리</a></li>
+							<li><a href="https://notyu.tistory.com/manage/entry/post">글쓰기</a></li>
+							<li class="login"><a href="https://notyu.tistory.com/59#">로그인</a></li>
+							<li class="logout" style="display: none;"><a href="https://notyu.tistory.com/59#">로그아웃</a></li>
+						</ul>
+					</nav>
+				</div>
+				<button type="button" class="menu"><span>메뉴</span></button>
+			</div>
+			<nav id="gnb">
+				<ul style="width: 271px;">		<li class="t_menu_home first">
+			<a href="https://notyu.tistory.com/">홈</a>
+		</li>
+				<li class="t_menu_tag">
+			<a href="https://notyu.tistory.com/tag">태그</a>
+		</li>
+				<li class="t_menu_guestbook last">
+			<a href="https://notyu.tistory.com/guestbook">방명록</a>
+		</li>
+		</ul>
+			</nav>
+		</div>
+	</header>
+	<section id="container">
+		
+		<div class="content-wrap">
+			<article id="content">
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				<div class="inner">
+					
+
+						
+
+						
+							<div class="post-cover" style="background-image:url(https://blog.kakaocdn.net/dn/cS3Fg8/btqOnzhimS0/zaAOPsIidTr9ItApKcglg0/img.png)">
+								<div class="inner">
+									<span class="category">유니티/기초</span>
+									<h1>유니티 파티클 시스템 (Particle System)- 속성</h1>
+									<span class="meta">
+										<span class="author">by 노튜</span>
+										<span class="date">2020. 11. 27.</span>
+										
+									</span>
+								</div>
+							</div>
+
+							<div class="entry-content">
+								<div class="tt_article_useless_p_margin contents_style">            <div class="revenue_unit_wrap ">
+                <div class="revenue_unit_item adfit">
+                    <div class="revenue_unit_info">728x90</div>
+                    <ins class="kakao_ad_area" style="display: inline-block; text-decoration: none; height: 90px; max-height: inherit; min-height: 90px; min-width: 728px; width: 728px;" data-ad-unit="DAN-s1gpie8s7529" data-ad-width="728" data-ad-height="90px" id="kakao_ad_pMyv9Y"><div data-ad-creative-wrap="outer" class="adfit__html-banner" style="min-width: 728px; min-height: 90px;"><div data-ad-creative-wrap="inner" class="adfit__html-banner__inner" style="height: 90px;"><div><iframe src="./유니티 파티클 시스템 (Particle System)- 속성_files/2827c64a1af33a616f8f9370b9cdb694f98d0f95.html" width="100%" style="position: absolute; top: 0px; left: 0px; display: block; border: none; height: 90px; width: 728px; min-width: 728px; min-height: 90px; overflow: hidden; padding: 0px; margin: 0px auto;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" name="%5B%7B%22usePrefersColorScheme%22%3A%22N%22%2C%22usePreferColorScheme%22%3A%22N%22%2C%22frameId%22%3A%2279269792-64ba-4093-8689-179311cc95eb%22%2C%22frameName%22%3A%2279269792-64ba-4093-8689-179311cc95eb%22%2C%22title%22%3A%22%EC%B2%99%EC%B6%94%EA%B4%80%EC%A0%88%ED%86%B5%EC%A6%9D%20%EC%98%88%EC%8A%A4%EB%B3%91%EC%9B%90%EA%B5%AC%EB%A1%9C%22%2C%22body%22%3A%22%EB%AA%A9%2C%20%ED%97%88%EB%A6%AC%EB%94%94%EC%8A%A4%ED%81%AC%2C%20%EB%AC%B4%EB%A6%8E%2C%20%EC%96%B4%EA%B9%A8%EA%B4%80%EC%A0%88%20%EB%B9%84%EC%88%98%EC%88%A0%20%EC%B5%9C%EC%9A%B0%EC%84%A0%EC%B9%98%EB%A3%8C%2C%20%EC%88%98%EC%88%A0%20%ED%9B%84%20%EC%9E%AC%ED%99%9C%EA%B9%8C%EC%A7%80%20%EA%BC%BC%EA%BC%BC%ED%95%9C%20%EB%B3%91%EC%9B%90.%22%2C%22adInfoIcon%22%3A%7B%22url%22%3A%22https%3A%2F%2Ft1.daumcdn.net%2Fbiz%2Fui%2Fad%2FADmark%2Fi_mark_200803.png%22%2C%22width%22%3A15%2C%22height%22%3A15%7D%2C%22adInfoUrl%22%3A%22https%3A%2F%2Finfo.ad.daum.net%2Foptout.do%22%2C%22landingUrl%22%3A%22https%3A%2F%2Fka.ad.daum.net%2Fclick%2Fhttp%253A%252F%252Fwww.yespine.co.kr%253Futm_source%253Dkakao%2526utm_medium%253Dkeyword%2526utm_campaign%253DPREMIUM_LINK%2526k_campaign%253D51310421588618%2526k_adgroup%253D17059180%2526k_media%253DPREMIUM_LINK_CONTENT%2526k_creative%253D1005539850%2526k_creativelink%253D1005559504%2526k_rank%253D1%2FTpn9jrMaHHPsWmxn2b6D508SiBltDvC5miv0WYTBMwxi2IUrIV9i7wqwVtldGLeBgNDDjCLVdeKf2dZdOgs3Prt4wTzs_OQEpUC8vKLdnEOuaZGzsp9KegEz2rFKC2m8m9ZgXzmHQs3ixpefP2BWndyNUDzP7_a8P9o4bX3AfTZD38q3TeMZlPtrGx6GclpHEKH563A1vlpfA0LZJl1Of7p_JR0WzscFMnlMsLOAwUpxnMClKl-5j3yRDVxnrg2BFygwfQt0NAkR7bcZf2CUpwLuPxKfrMBg9C8XC3jUPYSYGGtuhLSJkrAeSuoVDdYHn8ylQM869wOf9f5JqHjQ7vGvm5Se59ZLp8wLx7Zm1wtIXNRtmoKW0YN-buI1dg%3D%3D%3Fp%3Dh5sE6ZOqbaC_S0gKVX42RQ%22%2C%22useAdInfoIcon%22%3Atrue%2C%22useAdInfoUrl%22%3Atrue%2C%22events%22%3A%5B%7B%22type%22%3A%22viewable%22%2C%22url%22%3A%22https%3A%2F%2Fka.ad.daum.net%2Fvimp%2FTpn9jrMaHHPsWmxn2b6D508SiBltDvC5miv0WYTBMwxi2IUrIV9i7wqwVtldGLeBgNDDjCLVdeKf2dZdOgs3Prt4wTzs_OQEpUC8vKLdnEOuaZGzsp9KegEz2rFKC2m8m9ZgXzmHQs3ixpefP2BWndyNUDzP_Pe-aIUQYn2IZ3pcmIPyEoQC%3Fp%3Dh5sE6ZOqbaC_S0gKVX42RQ%22%7D%2C%7B%22type%22%3A%22rendered%22%2C%22url%22%3A%22https%3A%2F%2Fka.ad.daum.net%2Frimp%2FTpn9jrMaHHPsWmxn2b6D508SiBltDvC5miv0WYTBMwxi2IUrIV9i7wqwVtldGLeBgNDDjCLVdeKf2dZdOgs3Prt4wTzs_OQEpUC8vKLdnEOuaZGzsp9KegEz2rFKC2m8m9ZgXzmHQs3ixpefP2BWndyNUDzP_Pe-aIUQYn2IZ3pcmIPyEoQC%3Fp%3Dh5sE6ZOqbaC_S0gKVX42RQ%26ac%3DBoyu0-YsSDH7DS0gpOvC6lUS2kk6WPfrxGesDIfKKQgqiNIzKVxkuB7lBYMKF6LQ%22%7D%2C%7B%22type%22%3A%22rendered%22%2C%22url%22%3A%22https%3A%2F%2Fserv.ds.kakao.com%2Fdspr%2Fsync%3Fdspr%3DalHgmZ_rq05OpnPWXKqO-R1ac5RlRCnJcXuv3-y0kdpgzij0llwEs-AANFoorQTQkXOaLJXh-pvnE-FMabLIWHlMpQ7vH2NRLEBv1tMwKU7bxbRUeABOuBOJy7lussJNZlB5_6MxbUAcBeA6PwnS9J9En6b8yciKxQiFfQwwbkgYFMstJ364POVK5vnH3rvhTawKedTGJbvUYfstiP9UnFre_TK6XrnTmabC4xunlx5W2nqisGi6TzYDxbJ9GRgsFoSK3ErMsXrsUaz5uQSJPLarLKH44Cu9ar-WGMmuKbMoP8nRz7xjcd3Ue6ABpfwstBoD-yz5ky6fZHrWwcYVez0j6xqcm-cJJkSb35kJtMjk-3zkh_PAOFpB48xeY9YU_cBI7HoMUYmz8nO4mP4g1ULhlijA7mEruP1cCMso4krQEihEhH0VLXfRpNehfrabHVpzlGVEKclxe6_f7LSR2mDOKPSWXASz4AA0WiitBNDxuLOYKtDZge3vpFFhMiXP_gRRUWSmQgR8bFKHhT9Q0zRTuw3eRt2PEw_JnpwBr1NXPZBZKvBT0Kl429HC9fhzJ4e-V_rg2SRVx_XsNlfFsg%22%7D%5D%2C%22dspId%22%3A%22KEYWORDAD%22%2C%22bodyLink%22%3A%7B%22url%22%3A%22https%3A%2F%2Fka.ad.daum.net%2Fclick%2Fhttp%253A%252F%252Fwww.yespine.co.kr%253Futm_source%253Dkakao%2526utm_medium%253Dkeyword%2526utm_campaign%253DPREMIUM_LINK%2526k_campaign%253D51310421588618%2526k_adgroup%253D17059180%2526k_media%253DPREMIUM_LINK_CONTENT%2526k_creative%253D1005539850%2526k_creativelink%253D1005559504%2526k_rank%253D1%2FTpn9jrMaHHPsWmxn2b6D508SiBltDvC5miv0WYTBMwxi2IUrIV9i7wqwVtldGLeBgNDDjCLVdeKf2dZdOgs3Prt4wTzs_OQEpUC8vKLdnEOuaZGzsp9KegEz2rFKC2m8m9ZgXzmHQs3ixpefP2BWndyNUDzP7_a8P9o4bX3AfTZD38q3TeMZlPtrGx6GclpHEKH563A1vlpfA0LZJl1Of7p_JR0WzscFMnlMsLOAwUpxnMClKl-5j3yRDVxnrg2BFygwfQt0NAkR7bcZf2CUpwLuPxKfrMBg9C8XC3jUPYSYGGtuhLSJkrAeSuoVDdYHn8ylQM869wOf9f5JqHjQ7vGvm5Se59ZLp8wLx7Zm1wtIXNRtmoKW0YN-brNKaGyYdu8eNjDx1bG6UkQ6LoOaBG5qCfY1r_aX%3Fp%3Dh5sE6ZOqbaC_S0gKVX42RQ%22%7D%2C%22bodyExt%22%3A%7B%22text%22%3A%22%EC%9D%98101073%22%7D%2C%22displayUrl%22%3A%22http%3A%2F%2Fwww.yespine.co.kr%22%2C%22nasTemplateSeq%22%3A27%2C%22type%22%3A%22native%22%7D%5D" id="79269792-64ba-4093-8689-179311cc95eb"></iframe></div></div></div>
+                    </ins> 
+                    <script type="text/javascript" src="./유니티 파티클 시스템 (Particle System)- 속성_files/ba.min.js.다운로드" async=""></script>
+                </div>
+            </div><h2 data-ke-size="size26"><span style="color: #000000;">1. 유니티 파티클 시스템</span></h2>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">유니티 파티클 시스템은 작고 간단한 이미지나 메쉬를 대량으로 표현하는 데 사용하도록 만들어진 시스템이다. 파티클은 움직이도록 제어할 수도 있으며, 크기, 방향, 모양 등을 설정하여, 눈이나 비가 내리는 효과와 같은 다양한 효과를 만드는 데 사용된다.&nbsp;&nbsp;</span></p>
+<p><b><br><br></b></p>
+<p></p><figure class="imageblock alignCenter" data-filename="Particle System Base Attributes.PNG" data-origin-width="401" data-origin-height="470" data-ke-mobilestyle="widthContent"><span data-url="https://blog.kakaocdn.net/dn/Einhw/btqOn1kkkxO/ufF881GGvpiK0En6zk8bp1/img.png" data-lightbox="lightbox" data-alt="Particle System"><img src="./유니티 파티클 시스템 (Particle System)- 속성_files/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FEinhw%2FbtqOn1kkkxO%2FufF881GGvpiK0En6zk8bp1%2Fimg.png" data-filename="Particle System Base Attributes.PNG" data-origin-width="401" data-origin-height="470" data-ke-mobilestyle="widthContent"></span><figcaption>Particle System</figcaption></figure><p></p>
+<h3 data-ke-size="size23"><span style="color: #000000;">1.1 속성</span></h3>
+<p><b><br><br></b></p>
+<p><u><span>▼아이콘</span></u></p>
+<p><u><span>대부분 속성에는 ▼모양의 아이콘이 있다.</span></u></p>
+<p><u><span>&nbsp;▼아이콘을 선택해서, 랜덤으로 파티클의 시작 크기, 속도 등을 조절할 수 있다.&nbsp;</span></u></p>
+<p><u><span>파티클의 크기 및 속도에 랜덤성을 부여하여, 시각적인 효과를 높일 수 있다.&nbsp;</span></u></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">Duration : 파티클 시스템의 재생시간이다.&nbsp;</span></p>
+<p><span style="color: #000000;">Looping : 반복사용 설정이다. Duration을 반복한다.&nbsp;</span></p>
+<p><span style="color: #000000;">Prewarm : Looping이 선택(✓)되면 활성화된다. 한 사이클( One Duration )이 이미 완료된 상태에서 파티클 시스템이 동작한다. 예를 들어, 눈이 내리는 지역에서 시작할 때, 눈이 내리고 있는 모습을 표현할 수 있다. Prewarm이 선택되지 않으면, 시작 시 눈이 내리기 시작한다.&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p><span style="color: #000000;">Start Delay : 시작 시간을 연기한다. 1초로 설정하면, 1초 후에 파티클 시스템이 동작한다.</span></p>
+<p><span style="color: #000000;">Start Lifetime :&nbsp; 파티클의 재생시간이다. (파티클 시스템이 아니다. )&nbsp;&nbsp;</span></p>
+<p><span style="color: #000000;">Start Speed : 파티클의 시작 속도이다. 0은 움직이지 않으며, 숫자가 클수록 빠르다.</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">3D Start Size&nbsp; : X, Y, Z 값을 따로 설정하여 파티클의 시작 크기를 설정한다.</span></p>
+<p><span style="color: #000000;">Start Size : 파티클의 시작 크기를 설정한다.&nbsp;</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">3D Start Rotation : X, Y, Z 값을 각각 설정하여 파티클의 시작 시 회전 값을 설정한다.</span></p>
+<p><span style="color: #000000;">Start Rotation : 파티클의 시작 시 회전 값을 설정한다.</span></p>
+<p><span style="color: #000000;">Flip Rotation : 0.0~ 1.0 사이의 값을 설정한다. 실제 0프로 ~ 100프로의 값과 같은 의미이다.</span></p>
+<p><span style="color: #000000;">반대방향으로 파티클을 회전시킬지를 설정하는 값이다. 가령, 15의 시작 회전 값을 가진다고 하면, Flip Rotation 값을 설정하면, -15의 시작 회전 값을 가진 파티클을 생성한다. 0.5로 설정하면, 절반은 15, 나머지 절반은 -15의 회전 값을 가진 파티클을 생성한다.</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">Start Color : 파티클의 시작 시 색상을 설정한다.</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">Gravity Modifier : 파티클이 중력에 영향을 받을 지를 설정한다.</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">Simulation Space : 파티클이 동작하는 환경이 World, Local, Custom 인지 설정한다.</span></p>
+<p><span style="color: #000000;">Simulation Speed : 파티클 시스템의 동작 환경의 시간을 설정한다. 파티클의 속도, Duration의 감소 등이 영향을 받는다.</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">Delta Time : Unscaled 와 Scaled 값을 설정한다. Scaled는 Time.timeScale에 영향을 받는다. Time.timeScale은 플레이 시 게임의 시간을 조절할 수 있는 기능으로, Time.timeScale = 0.0일 때에는, 모든 게임 오브젝트는 정지한다.&nbsp; Unscaled는 영향을 받지 않고 동작한다.&nbsp;&nbsp;</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">Scaling Mode : 파티클의 스케일에 영향을 주는 방법을 설정한다. Hierarchy, Local, Shape 모드가 있으며, Hierarchy를 선택하면, 부모 게임 오브젝트의 Scale에 영향을 받는다.</span></p>
+<p><span style="color: #000000;">Play On Awake :&nbsp; 파티클 시스템의 시작 설정을 한다. Play On Awake 설정을 해제하고, 스크립트로 시작 및 정지를 설정한다. 선택하면 활성화되면 파티클 시스템이 실행된다.</span></p>
+<p><span style="color: #000000;">Emitter Velocity : 파티클 시스템이 속도를 계산하는데 Rigidbody 또는 Transform을 사용할지를 설정합니다.</span></p>
+<p><span style="color: #000000;">Max Particles : 최대 파티클의 수를 설정합니다.</span></p>
+<p><span style="color: #000000;">Auto Random Seed : 설정을하면, 파티클 시스템의 모양이 조금씩 다릅니다. 설정을 해제하면, 파티클 시스템의 모양이 일정하다. 반복 효과를 내는 데 사용할 수 있다.</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">Stop Action : 파티클 시스템이 정지한 후의 행동을 설정한다. 파티클 시스템에서 방출한 파티클들이 시간을 다하여 정지한 상태까지 포함한다. Disable(비활성화), Destroy(파괴), Callback(On Particle System Stopped 콜백을 연결된 스크립트로 전송한다.), None (없음) 설정을 합니다.&nbsp;</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">Culling mode: 파티클 시스템이 방출한 파티클이 스크린을 벗어나면 취할 행동을 설정합니다.&nbsp;</span></p>
+<p><span style="color: #000000;">Pause는 파티클이 화면에서 벗어나면 시뮬레이션을 중단합니다.</span></p>
+<p><span style="color: #000000;">Pause and Catch-up은 화면에서 벗어나면 시뮬레이션을 중단하고, 다시 진입하면 정지되지 않았다면 시뮬레이션이 도달해야하는 단계까지 행동을 하기 위해 대규모 단계를 수행한다. 성능이 순간적으로 크게 저하될 수 있다.&nbsp;</span></p>
+<p><span style="color: #000000;">Always Simulate : 스크린상에 있지 않아도 시뮬레이션 한다. 불꽃놀이 같은 일회성 효과에 유용하다.</span></p>
+<p><span style="color: #000000;">Automatic : 반복 설정한 경우에는 Pause, 기타 시스템에는 Always Simulate를 한다.</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">Ring Buffer Mode : </span><span>파티클이 Max Particles 수에 도달할 때까지 파티클을 계속 활성화합니다.</span></p>
+<p><span>Max Particles 수에 도달하면 수명이 경과한 파티클을 제거하는 대신 가장 오래된 파티클을 재활용하여 새 파티클을 생성합니다(Unity documents).&nbsp;</span></p>
+<p><b>&nbsp;</b></p>
+<p><span>Disabled : 시스템이 수명이 경과한 파티클을 제거합니다.&nbsp;&nbsp;</span></p>
+<p><span>Pause Until Replaced : 수명을 다한 오래된 파티클을 일시정지했다가 Max Particles 한계에 도달하면 시스템에서 재활용하여 새 파티클로 다시 표시되게 합니다.&nbsp;</span></p>
+<p><span>Loop Until Replaced : 수명을 다한 파티클이 특정한 수명 비율 지점으로 다시 돌아가며, Max Particles 한계에 도달하면 시스템에서 재활용하여 새 파티클로 다시 표시되게 합니다.</span></p>
+<p>&nbsp;</p>
+            <div class="revenue_unit_wrap ">
+                <div class="revenue_unit_item adfit">
+                    <div class="revenue_unit_info">728x90</div>
+                    <ins class="kakao_ad_area" style="display: inline-block; text-decoration: none; height: 90px; max-height: inherit; min-height: 90px; min-width: 728px; width: 728px;" data-ad-unit="DAN-gwbOnh9W0ICENDKk" data-ad-width="728" data-ad-height="90px" id="kakao_ad_8AMGID"><div data-ad-creative-wrap="outer" class="adfit__html-banner" style="min-width: 728px; min-height: 90px;"><div data-ad-creative-wrap="inner" class="adfit__html-banner__inner" style="height: 90px;"><div><iframe src="./유니티 파티클 시스템 (Particle System)- 속성_files/2827c64a1af33a616f8f9370b9cdb694f98d0f95(1).html" width="100%" style="position: absolute; top: 0px; left: 0px; display: block; border: none; height: 90px; width: 728px; min-width: 728px; min-height: 90px; overflow: hidden; padding: 0px; margin: 0px auto;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" name="%5B%7B%22usePrefersColorScheme%22%3A%22N%22%2C%22usePreferColorScheme%22%3A%22N%22%2C%22frameId%22%3A%22d3e9939e-4ae7-4687-a129-357fba9230f1%22%2C%22frameName%22%3A%22d3e9939e-4ae7-4687-a129-357fba9230f1%22%2C%22title%22%3A%22%EC%95%8C%EC%BD%94%EC%98%AC%20%EC%A7%88%ED%99%98%20%EC%A0%84%EB%AC%B8%EB%B3%91%EC%9B%90%20%ED%98%91%EC%9D%98%ED%9A%8C%22%2C%22body%22%3A%22%EC%95%8C%EC%BD%94%EC%98%AC%20%EC%A7%88%ED%99%98%EC%9D%80%20%EB%B0%98%EB%93%9C%EC%8B%9C%20%EC%A0%84%EB%AC%B8%EB%B3%91%EC%9B%90%EC%97%90%EC%84%9C%2C%20%EB%B3%B4%EA%B1%B4%EB%B3%B5%EC%A7%80%EB%B6%80%EA%B0%80%20%EC%A7%80%EC%A0%95%ED%95%9C%20%EC%8B%A0%EB%A2%B0%ED%95%A0%20%EC%88%98%20%EC%9E%88%EB%8A%94%20%EC%A0%84%EB%AC%B8%EB%B3%91%EC%9B%90!%22%2C%22adInfoIcon%22%3A%7B%22url%22%3A%22https%3A%2F%2Ft1.daumcdn.net%2Fbiz%2Fui%2Fad%2FADmark%2Fi_mark_200803.png%22%2C%22width%22%3A15%2C%22height%22%3A15%7D%2C%22adInfoUrl%22%3A%22https%3A%2F%2Finfo.ad.daum.net%2Foptout.do%22%2C%22landingUrl%22%3A%22https%3A%2F%2Fka.ad.daum.net%2Fclick%2Fhttp%253A%252F%252F%25EC%2595%258C%25EC%25BD%2594%25EC%2598%25AC%25EC%25A0%2584%25EB%25AC%25B8%25EB%25B3%2591%25EC%259B%2590%25ED%2598%2591%25EC%259D%2598%25ED%259A%258C.%25ED%2595%259C%25EA%25B5%25AD%2FTpn9jrMaHHPsWmxn2b6D508U2k1rXPTqlyukDIPDMww334Ure141uQrnA45fF-iE39TCgn7VdeKf2dZdOgs3Prt4wTzs_OQEpUC8vKLdz0n7NJjt459KfAA027FKDGm9m402CDaHFJ6xnJCQM2cGmdnTUDzP7_a8P9o4bX3AfTZD38q3TeMZlPtrGx6GclpHEKH563A1vlpfA0LZJl1OeLp_Kh4YzsYbPChatr-By2xakfSHMVW_yGSfD0J9rwuAHSYsb0ghZUtCtcZPcXiBow_vOQfy6oM-4WxBI2aLY8eXFzp2j8PQw6EQVuQVDdIFjYn2GI9m4HyA7-Ra_SWNmKmFw87G544T871KirB4xkcWN5ExyJ2fltciDeoYe2yIN75yfz3Jig%3D%3D%3Fp%3Dna_GwoxlZ0o7LChd_exB4g%22%2C%22useAdInfoIcon%22%3Atrue%2C%22useAdInfoUrl%22%3Atrue%2C%22events%22%3A%5B%7B%22type%22%3A%22viewable%22%2C%22url%22%3A%22https%3A%2F%2Fka.ad.daum.net%2Fvimp%2FTpn9jrMaHHPsWmxn2b6D508U2k1rXPTqlyukDIPDMww334Ure141uQrnA45fF-iE39TCgn7VdeKf2dZdOgs3Prt4wTzs_OQEpUC8vKLdz0n7NJjt459KfAA027FKDGm9m402CDaHFJ6xnJCQM2cGmdnTUDzP_Pe-aIUQYn2IZ3pcmIPyEoQC%3Fp%3Dna_GwoxlZ0o7LChd_exB4g%22%7D%2C%7B%22type%22%3A%22rendered%22%2C%22url%22%3A%22https%3A%2F%2Fka.ad.daum.net%2Frimp%2FTpn9jrMaHHPsWmxn2b6D508U2k1rXPTqlyukDIPDMww334Ure141uQrnA45fF-iE39TCgn7VdeKf2dZdOgs3Prt4wTzs_OQEpUC8vKLdz0n7NJjt459KfAA027FKDGm9m402CDaHFJ6xnJCQM2cGmdnTUDzP_Pe-aIUQYn2IZ3pcmIPyEoQC%3Fp%3Dna_GwoxlZ0o7LChd_exB4g%26ac%3DBoyu0-YsSDH7DS0gpOvC6lUS2kk6WPfrxGesDIfKKQgqiNIzKVxkuB7lBYMKF6LQ%22%7D%2C%7B%22type%22%3A%22rendered%22%2C%22url%22%3A%22https%3A%2F%2Fserv.ds.kakao.com%2Fdspr%2Fsync%3Fdspr%3DalHgmZ_rq05OpnPWXKqO-R1ac5RlRCnJcXuv3-y0kdpgzij0llwEs-AANFoorQTQkXOaLJXh-pvnE-FMabLIWHlMpQ7vH2NRLEBv1tMwKU7bxbRUeABOuBOJy7lussJNZlB5_6MxbUAcBeA6PwnS9J9En6b8yciKxQiFfQwwbkgYFMstJ364POVK5vnH3rvhTawKedTGJbvUYfstiP9UnFre_TK6XrnTmabC4xunlx5W2nqisGi6TzYDxbJ9GRgsFoSK3ErMsXrsUaz5uQSJPLarLKH44Cu9ar-WGMmuKbMoP8nRz7xjcd3Ue6ABpfwstBoD-yz5ky6fZHrWwcYVez0j6xqcm-cJJkSb35kJtMjk-3zkh_PAOFpB48xeY9YU_cBI7HoMUYmz8nO4mP4g1ULhlijA7mEruP1cCMso4krQEihEhH0VLXfRpNehfrabHVpzlGVEKclxe6_f7LSR2mDOKPSWXASz4AA0WiitBNDxuLOYKtDZge3vpFFhMiXP_gRRUWSmQgR8bFKHhT9Q0zRTuw3eRt2PEw_JnpwBr1NXPZBZKvBT0Kl429HC9fhzJ4e-V_rg2SRVx_XsNlfFsg%22%7D%5D%2C%22dspId%22%3A%22KEYWORDAD%22%2C%22bodyLink%22%3A%7B%22url%22%3A%22https%3A%2F%2Fka.ad.daum.net%2Fclick%2Fhttp%253A%252F%252F%25EC%2595%258C%25EC%25BD%2594%25EC%2598%25AC%25EC%25A0%2584%25EB%25AC%25B8%25EB%25B3%2591%25EC%259B%2590%25ED%2598%2591%25EC%259D%2598%25ED%259A%258C.%25ED%2595%259C%25EA%25B5%25AD%2FTpn9jrMaHHPsWmxn2b6D508U2k1rXPTqlyukDIPDMww334Ure141uQrnA45fF-iE39TCgn7VdeKf2dZdOgs3Prt4wTzs_OQEpUC8vKLdz0n7NJjt459KfAA027FKDGm9m402CDaHFJ6xnJCQM2cGmdnTUDzP7_a8P9o4bX3AfTZD38q3TeMZlPtrGx6GclpHEKH563A1vlpfA0LZJl1OeLp_Kh4YzsYbPChatr-By2xakfSHMVW_yGSfD0J9rwuAHSYsb0ghZUtCtcZPcXiBow_vOQfy6oM-4WxBI2aLY8eXFzp2j8PQw6EQVuQVDdIFjYn2GI9m4HyA7-Ra_SWNmKmFw87G544T871KirB4xkcWN5ExyJ2fltciDeoYe2yIN75yf2y2lOfxdWo9FKG2dgABAv1EkfmjDVJ6oslo9ZoR%3Fp%3Dna_GwoxlZ0o7LChd_exB4g%22%7D%2C%22displayUrl%22%3A%22http%3A%2F%2F%EC%95%8C%EC%BD%94%EC%98%AC%EC%A0%84%EB%AC%B8%EB%B3%91%EC%9B%90%ED%98%91%EC%9D%98%ED%9A%8C.%ED%95%9C%EA%B5%AD%22%2C%22nasTemplateSeq%22%3A27%2C%22type%22%3A%22native%22%7D%5D" id="d3e9939e-4ae7-4687-a129-357fba9230f1"></iframe></div></div></div>
+                    </ins> 
+                    <script type="text/javascript" src="./유니티 파티클 시스템 (Particle System)- 속성_files/ba.min.js.다운로드" async=""></script>
+                </div>
+            </div>
+<h3 data-ke-size="size23">1.2 모듈(Module)</h3>
+<p><span style="color: #000000;">1.2.1 Emission</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">초당 방출하는 파티클은 Duration 동안에 초당 지속적으로 생성된다.</span></p>
+<p><span style="color: #000000;">Bursts는 Duration 동안에 Cycles 수 만큼 Interval 간격으로 Count의 파티클 양을 방출한다.</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">Rate Over Time : 초당 방출하는 파티클 수를 설정한다.</span></p>
+<p><span style="color: #000000;">Rate Over Distance : Unit을 기준으로 거리당 방출하는 파티클 수를 설정한다.</span></p>
+<p><span style="color: #000000;">Bursts : 파티클을 한번에 방출한다. +- 를 사용해 추가하거나 제거할 수 있다.</span></p>
+<p><span style="color: #000000;">&nbsp;Time : 시작 시간을 연기한다.&nbsp;</span></p>
+<p><span style="color: #000000;">Count : 한번에 방출하는 파티클의 숫자를 설정한다.</span></p>
+<p><span style="color: #000000;">Cycles : Duration 동안에 방출하는 숫자를 설정한다.</span></p>
+<p><span style="color: #000000;">Interval : 방출 간격을 설정한다.</span></p>
+<p><span style="color: #000000;">Probability : 방출 확률을 설정한다. 0.0~ 1.0 사이의 값을 가지며, 0%~100%를 의미한다.</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">1.2.2 Shape</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">&nbsp;파티클을 내보내는 모양을 설정한다.&nbsp;</span></p>
+<p><span style="color: #000000;">Shape : Cone, Box , Sphere 등의 모양과 함께, Mesh 타입으로 파티클을 내보내는 모양을 설정할 수 있다.&nbsp;</span></p>
+<p><span style="color: #000000;">Cone을 예로 들어, Angle을 설정하여, Cone모양에서 파티클이 퍼지도록 할 수 있으며, Radius를 조절하여, 시작 위치를 좁히거나 퍼져서 파티클이 생성되도록 설정할 수 있다.&nbsp;</span></p>
+<p><span style="color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">1.2.3 Velocity Over Lifetime</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">파티클이 생성되고 사라지질 때까지의 속도를 조절한다. 직선, 궤도 벡터 값을 사용하며, 파티클을 대각선으로 나가게 하거나, 회전하도록 설정할 수 있다.&nbsp;</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">1.2.4 Limit Velocity Over lifetime</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">파티클의 속도를 제한한다. 제한 속도를 초과할 경우 속도가 감소하는 비율 등을 설정할 수 있다.&nbsp;&nbsp;</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">1.2.5 Inherit Velocity</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">파티클이 부모로부터 속도를 상속받도록 설정한다.</span></p>
+<p><span style="color: #000000;">Mode Initial은 파티클이 생성 시 한번만 상속을 받도록 설정하며, Mode Current은 지속적으로 계속 영향을 받는다. Multiplier는 속도를 상속받는 비율을 설정한다.</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">1.2.6 Force Over Lifetime&nbsp;</span></p>
+<p><span style="color: #000000;">파티클이 활성화된 시간동안 힘을 가한다.&nbsp;</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">1.2.7 Color over Lifetime&nbsp;</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">파티클이 활성화된 시간 동안의 색상을 설정한다. Gradient 모드를 사용하여, 색상 및 알파 값을 조절할 수 있다.</span></p>
+<p><b>&nbsp;</b></p>
+<p></p><figure class="imageblock alignCenter" width="376" height="252" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"><span data-url="https://blog.kakaocdn.net/dn/cS3Fg8/btqOnzhimS0/zaAOPsIidTr9ItApKcglg0/img.png" data-lightbox="lightbox" data-alt="Color Gradient&amp;nbsp;"><img src="./유니티 파티클 시스템 (Particle System)- 속성_files/img(1).png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcS3Fg8%2FbtqOnzhimS0%2FzaAOPsIidTr9ItApKcglg0%2Fimg.png" width="376" height="252" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"></span><figcaption>Color Gradient&nbsp;</figcaption></figure><p></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">1.2.8 Color by Speed</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">파티클의 속도에 따라 색상 값에 변화를 주도록 설정한다.</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">1.2.9 Size over Lifetime</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">파티클이 활성화된 시간 동안에 크기를 조절한다.</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">1.2.10 Size by Speed&nbsp;</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">파티클의 속도에 따라 크기를 변경하도록 설정한다.</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">1.2.11 Rotation over Lifetime</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">파티클이 활성화된 시간 동안에 회전을 하도록 설정한다.</span></p>
+<p>&nbsp;</p>
+<p><span style="color: #000000;">1.2.12 Rotation by Speed</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">파티클의 속도에 따라 회전을 하도록 설정한다.</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">1.2.13 External Forces&nbsp;</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">윈드 존 (Wind Zone)에 영향을 받는 정도를 설정한다.&nbsp;</span></p>
+<p><span style="color: #000000;">Game Object → 3D <span style="color: #000000;">→</span> Wind Zone</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">1.2.14 Noise&nbsp;</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">파이클에 노이즈 효과를 준다. 파티클에 불규칙적인 움직임을 연출하여, 자연스러운 효과를 줄 수 있다.&nbsp;&nbsp;</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">1.2.15 Collision</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">파티클과 게임 오브젝트가 충돌하도록 설정한다. 평면(Plane)이나 월드(World) 설정을 통해 다양한 물체와 충돌을 하도록 설정할 수 있다.</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">1.2.16 Triggers</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">대상 게임 오브젝트와 충돌 판정을 설정한다. 대상 게임 오브젝트와 충돌하면 파티클을 사라지게하거나, 통과하도록 설정한다. 충돌 후 Callback 함수를 호출하도록 설정할 수 있다.&nbsp;&nbsp;</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">1.2.17 Sub Emitters</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">파티클이 생성, 충돌, 파괴되었을때, 서브 파티클을 방출하도록 설정한다. 불꽃놀이를 예를 들 수 있다. Sub Emitter로 설정된 파티클 시스템은 현재 파티클 시스템의 하위 요소에 있어야 한다. 파티클은 Sub Emitter의 Bursts를 방출한다.</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">&nbsp;&nbsp;</span><span style="color: #000000;"><span></span></span></p>
+<p></p><figure class="imageblock alignCenter" width="381" height="143" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"><span data-url="https://blog.kakaocdn.net/dn/bkgRea/btqOveorJjg/eQ9Db0VQOA4W3eUJ0Xz76k/img.png" data-lightbox="lightbox" data-alt="Sub Particle System"><img src="./유니티 파티클 시스템 (Particle System)- 속성_files/img(2).png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbkgRea%2FbtqOveorJjg%2FeQ9Db0VQOA4W3eUJ0Xz76k%2Fimg.png" width="381" height="143" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"></span><figcaption>Sub Particle System</figcaption></figure><p></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">&nbsp;&nbsp;</span></p>
+<p><span style="color: #000000;">1.2.18 Texture Sheet Animation</span></p>
+<p><b>&nbsp;</b></p>
+<p><span>파티클의 그래픽은 정지 이미지가 아니어도 됩니다. 이 모듈을 통해 텍스처를 두 개 이상의 애니메이션 프레임으로 재생할 수 있는 개별 하위 이미지의 그리드로 처리할 수 있습니다.(Unity documents)&nbsp;</span></p>
+<p><span>스프라이트 모드는 시간이 지남에 따라 Sprite A ➝ Sprite B ➝ Sprite C 로 애니메이션이 이루어지는 것처럼 설정할 수 있다.</span></p>
+<p><b>&nbsp;</b></p>
+<p><span>1.2.19 Lights</span></p>
+<p><b>&nbsp;</b></p>
+<p><span>파티클에 빛(라이트)를 추가 설정한다. 아래는 파티클에 라이트를 추가하였을 경우를 나타낸다.</span></p>
+<p><b>&nbsp;</b></p>
+<p></p><figure class="imageblock alignCenter" width="602" height="133" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"><span data-url="https://blog.kakaocdn.net/dn/bykZ7O/btqOn06NPkA/b4RAPIetvPLS4PkB0xuNTK/img.png" data-lightbox="lightbox" data-alt=""><img src="./유니티 파티클 시스템 (Particle System)- 속성_files/img(3).png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbykZ7O%2FbtqOn06NPkA%2Fb4RAPIetvPLS4PkB0xuNTK%2Fimg.png" width="602" height="133" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"></span></figure><p></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">1.2.20 Trails</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">파티클에 트레일(꼬리 선)을 추가 설정한다. 색상, 크기, 시간 등을 설정할 수 있다.&nbsp;</span></p>
+<p><span style="color: #000000;">Renderer 모듈의 Trail Material에 사용할 머티리얼을 등록해야 한다.&nbsp;&nbsp;</span></p>
+<p><b>&nbsp;</b></p>
+<p></p><figure class="imageblock alignCenter" width="602" height="384" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"><span data-url="https://blog.kakaocdn.net/dn/Zkd98/btqOnybFDdN/7QDdnSnyn1Yp568K0XSUxK/img.png" data-lightbox="lightbox" data-alt="Trail"><img src="./유니티 파티클 시스템 (Particle System)- 속성_files/img(4).png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FZkd98%2FbtqOnybFDdN%2F7QDdnSnyn1Yp568K0XSUxK%2Fimg.png" width="602" height="384" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"></span><figcaption>Trail</figcaption></figure><p></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">1.2.21 Custom Data&nbsp;</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">커스텀 데이터 모듈을 사용하면 파티클에 연결할 커스텀 데이터 포맷을 에디터에서 정의할 수 있습니다. 이 포맷은 스크립트에서도 설정할 수 있습니다. 데이터의 형태는 MinMaxCurve 컴포넌트가 4개 이하인 벡터(Vector)이거나 HDR을 사용 가능한 MinMaxGradient인 색상 일 수 있습니다. 이 데이터를 스크립트와 쉐이더에서 로직을 커스터마이즈 하는 데 사용합니다(Unity documents).</span></p>
+<p>&nbsp;</p>
+<p><b><br><br></b></p>
+<p><span style="color: #000000;">1.2.22 Renderer&nbsp;</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">렌더러 설정에 따라 파티클의 이미지나 메시가 렌더링 되는지를 결정한다.&nbsp;</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">Render Mode&nbsp;</span></p>
+<p><span style="color: #000000;">파티클을 렌더링하는 방법을 설정한다.</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">Billboard : 항상 카메라를 향하도록 설정한다.&nbsp;</span></p>
+<p><span style="color: #000000;">Vertical Billboard : 파티클이 월드 Y축과 평행하게 있으며, 카메라를 향한다.</span></p>
+<p><span style="color: #000000;">Horizontal Billboard : 파티클이 월드 XZ와 평행하게 있는다.</span></p>
+<p><span style="color: #000000;">Stretched Billboard : 파티클에 다양한 스케일이 적용되며, 카메라를 향한다.</span><b><br><br></b></p>
+<p></p><figure class="imageblock alignCenter" width="602" height="556" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"><span data-url="https://blog.kakaocdn.net/dn/vbxiR/btqOoL2ERyd/mmp2X3e5zwrEWYpOSqGw4K/img.png" data-lightbox="lightbox" data-alt="Render Mode"><img src="./유니티 파티클 시스템 (Particle System)- 속성_files/img(5).png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FvbxiR%2FbtqOoL2ERyd%2Fmmp2X3e5zwrEWYpOSqGw4K%2Fimg.png" width="602" height="556" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"></span><figcaption>Render Mode</figcaption></figure><p></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">Normal Direction : 파티클 그래픽스에 사용되는 조명 노멀의 바이어스(Vias)이다. 값이 1.0이면 노멀이 카메라를 향하고, 값이 0.0이면 화면 중앙을 향한다. (Billboard only)</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">Material : 파티클에 적용되는 머티리얼을 설정한다.</span></p>
+<p><span style="color: #000000;">Trail Material : Trail에 적용되는 머티리얼을 설정한다.</span></p>
+<p><span style="color: #000000;">Sort : 파티클이 그려지는 순서를 설정한다.</span></p>
+<p><span style="color: #000000;">Sorting Fudge : 다른 파티클 시스템이나 게임 오브젝트와의 파티클 시스템의 정렬 순서 설정이다. 값이 낮으면 다른 파티클 시스템을 포함한 다른 투명한 게임 오브젝트에 그려지는 상대적인 기회가 늘어난다.&nbsp;</span></p>
+<p>&nbsp;</p>
+<p><span style="color: #000000;">Min Particle Size : 스크린에 표시할 최소 파티클의 크기를 설정한다.</span></p>
+<p><span style="color: #000000;">Max Particle Size : 스크린에 표시할 최대 파티클의 크기를 설정한다.</span></p>
+<p>&nbsp;</p>
+<p><span style="color: #000000;">Render Alignment : Billboard 모드에서 파티클이 정렬되는 것을 설정한다. View 뷰포트를 바라보도록 설정하거나, Local과 일치하도록 설정 등을 할 수 있다.&nbsp;</span></p>
+<p><span style="color: #000000;">Flip : 0.0~1.0 사이의 값을 가지며, 지정된 축을 따라 파티클의 일부분을 미러링 한다.</span></p>
+<p><span style="color: #000000;">Allow Roll : </span><span>카메라를 향한 파티클이 카메라의 Z 축을 따라 회전 가능한지 여부를 제어합니다. 이 옵션을 비활성화하는 것은 HMD 롤로 인해 파티클 시스템에서 원하지 않는 결과가 도출될 수 있는 VR 애플리케이션의 경우 특히 유용합니다(Unity documents).</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">Pivot : 피벗을 설정한다. 피벗의 오프셋을 통해 회전 중심을 변경한다.&nbsp;</span></p>
+<p><span style="color: #000000;">Visualize Pivot : 피벗을 보이도록 설정한다.</span></p>
+<p><span style="color: #000000;">Masking : Mask 설정을 한다. (UI Mask 글을 참조해주세요.)&nbsp;</span></p>
+<p><span style="color: #000000;">Apply Active Color Space : </span><span>리니어 색 공간에서 렌더링 하는 경우 시스템이 파티클을 GPU에 업로드하기 전에 감마 공간의 파티클 컬러를 전환합니다.</span><span style="color: #000000;">&nbsp;</span></p>
+<p><b>&nbsp;</b></p>
+<p><span style="color: #000000;">Custom Vertex Streams : </span><span>머티리얼의 버텍스 셰이더에서 어떤 파티클 프로퍼티를 사용할지 설정한다.&nbsp;</span></p>
+<p><span>Cast Shadows : 그림자를 사용할지를 설정한다.&nbsp;</span></p>
+<p><span>Receive Shadows : 그림자 효과를 파티클에 캐스팅하도록 설정한다. 불투명한 머티리얼만 그림자가 적용될 수 있다.</span></p>
+<p><span>Shadow Bias :&nbsp; 조명 방향으로 그림자를 움직여 빌보드를 사용한 근사로 인해 발생하는 그림자 결함을 제거합니다.</span></p>
+<p>&nbsp;</p>
+<p><span>Motion Vectors : 모션 벡터를 설정한다.&nbsp;</span></p>
+<p><span>Sorting Layers ID : 정렬 레이어를 설정한다.&nbsp;</span></p>
+<p><span>Order in Layer : 정렬 레이어 내에서의 렌더링 설정을 한다.&nbsp;</span></p>
+<p><span>Light Probes : 라이트 프로브를 사용하여 빛 효과를 보정할지를 설정한다.&nbsp;</span></p>
+<p><span>Reflection Probes : 반사 프로브를 사용하여, 반사 효과를 보정할지를 설정한다.</span></p>
+<h2 data-ke-size="size26"><b><br></b>2. 파티클 시스템 활용 예제</h2>
+<p>&nbsp;</p>
+<p><a href="https://notyu.tistory.com/60" target="_blank" rel="noopener">https://notyu.tistory.com/60</a></p>
+<figure id="og_1606540869805" contenteditable="false" data-ke-type="opengraph" data-og-type="article" data-og-title="유니티 파티클 시스템(Particle System) - 활용" data-og-description="1. 파티클 시스템 속성 파티클 시스템의 속성 값에 대해서는 아래 글을 참조해주세요. https://notyu.tistory.com/59 유니티 파티클 시스템 (Particle System)- 속성 1. 유니티 파티클 시스템 유니티 파티클 시" data-og-host="notyu.tistory.com" data-og-source-url="https://notyu.tistory.com/60" data-og-url="https://notyu.tistory.com/60" data-og-image="https://scrap.kakaocdn.net/dn/wkEMt/hyIoRLN9N2/VckxTSbJOJN9KvdFbzLLu1/img.png?width=800&amp;height=447&amp;face=0_0_800_447,https://scrap.kakaocdn.net/dn/b6M4LC/hyIoKeQEJk/ZMkR85yp3QFHGKxkJqFKV1/img.png?width=800&amp;height=447&amp;face=0_0_800_447,https://scrap.kakaocdn.net/dn/bZL6lS/hyIoTQoaYr/ej3a5KQwMxkaZgKj6Selmk/img.png?width=821&amp;height=459&amp;face=0_0_821_459"><a href="https://notyu.tistory.com/60" target="_blank" rel="noopener" data-source-url="https://notyu.tistory.com/60">
+<div class="og-image" style="background-image: url(&#39;https://scrap.kakaocdn.net/dn/wkEMt/hyIoRLN9N2/VckxTSbJOJN9KvdFbzLLu1/img.png?width=800&amp;height=447&amp;face=0_0_800_447,https://scrap.kakaocdn.net/dn/b6M4LC/hyIoKeQEJk/ZMkR85yp3QFHGKxkJqFKV1/img.png?width=800&amp;height=447&amp;face=0_0_800_447,https://scrap.kakaocdn.net/dn/bZL6lS/hyIoTQoaYr/ej3a5KQwMxkaZgKj6Selmk/img.png?width=821&amp;height=459&amp;face=0_0_821_459&#39;);">&nbsp;</div>
+<div class="og-text">
+<p class="og-title">유니티 파티클 시스템(Particle System) - 활용</p>
+<p class="og-desc">1. 파티클 시스템 속성 파티클 시스템의 속성 값에 대해서는 아래 글을 참조해주세요. https://notyu.tistory.com/59 유니티 파티클 시스템 (Particle System)- 속성 1. 유니티 파티클 시스템 유니티 파티클 시</p>
+<p class="og-host">notyu.tistory.com</p>
+</div>
+</a></figure>
+<p>&nbsp;</p>
+<p><span style="color: #000000;">참조</span></p>
+<p>&nbsp;</p>
+<p><span style="color: #000000;"><a href="https://docs.unity3d.com/kr/2018.4/Manual/class-ParticleSystem.html" target="_blank" rel="noopener">docs.unity3d.com/kr/2018.4/Manual/class-ParticleSystem.html</a></span></p>
+<figure id="og_1606469132904" contenteditable="false" data-ke-type="opengraph" data-og-type="website" data-og-title="파티클 시스템 - Unity 매뉴얼" data-og-description="Particle System 컴포넌트는 씬 안에 다수의 작은 2D 이미지를 생성하고 애니메이션하여 액체, 구름 및 불꽃 같은 유체 엔티티를 시뮬레이션합니다. 파티클 시스템과 그 용도에 대한 전체 개요는 파" data-og-host="docs.unity3d.com" data-og-source-url="https://docs.unity3d.com/kr/2018.4/Manual/class-ParticleSystem.html" data-og-url="https://docs.unity3d.com/kr/2018.4/Manual/class-ParticleSystem.html" data-og-image="https://scrap.kakaocdn.net/dn/9nCWz/hyInijwHsk/YaBKoAh5X7UhKFXA1VkQPk/img.png?width=467&amp;height=426&amp;face=0_0_467_426"><a href="https://docs.unity3d.com/kr/2018.4/Manual/class-ParticleSystem.html" target="_blank" rel="noopener" data-source-url="https://docs.unity3d.com/kr/2018.4/Manual/class-ParticleSystem.html">
+<div class="og-image" style="background-image: url(&#39;https://scrap.kakaocdn.net/dn/9nCWz/hyInijwHsk/YaBKoAh5X7UhKFXA1VkQPk/img.png?width=467&amp;height=426&amp;face=0_0_467_426&#39;);">&nbsp;</div>
+<div class="og-text">
+<p class="og-title">파티클 시스템 - Unity 매뉴얼</p>
+<p class="og-desc">Particle System 컴포넌트는 씬 안에 다수의 작은 2D 이미지를 생성하고 애니메이션하여 액체, 구름 및 불꽃 같은 유체 엔티티를 시뮬레이션합니다. 파티클 시스템과 그 용도에 대한 전체 개요는 파</p>
+<p class="og-host">docs.unity3d.com</p>
+</div>
+</a></figure>
+<p>&nbsp;</p>            <div class="revenue_unit_wrap ">
+                <div class="revenue_unit_item adfit">
+                    <div class="revenue_unit_info">728x90</div>
+                    <ins class="kakao_ad_area" style="display: inline-block; text-decoration: none; height: 90px; max-height: inherit; min-height: 90px; min-width: 728px; width: 728px;" data-ad-unit="DAN-CzCedk0f91aZV3En" data-ad-width="728" data-ad-height="90px" id="kakao_ad_pTsSRV"><div data-ad-creative-wrap="outer" class="adfit__html-banner" style="min-width: 728px; min-height: 90px;"><div data-ad-creative-wrap="inner" class="adfit__html-banner__inner" style="height: 90px;"><div><iframe src="./유니티 파티클 시스템 (Particle System)- 속성_files/2827c64a1af33a616f8f9370b9cdb694f98d0f95(2).html" width="100%" style="position: absolute; top: 0px; left: 0px; display: block; border: none; height: 90px; width: 728px; min-width: 728px; min-height: 90px; overflow: hidden; padding: 0px; margin: 0px auto;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" name="%5B%7B%22usePrefersColorScheme%22%3A%22N%22%2C%22usePreferColorScheme%22%3A%22N%22%2C%22frameId%22%3A%22d083fbbb-2610-4cbb-9998-49c4603532fa%22%2C%22frameName%22%3A%22d083fbbb-2610-4cbb-9998-49c4603532fa%22%2C%22title%22%3A%22%EA%B5%BF%EB%8D%B0%EC%9D%B4%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4%22%2C%22body%22%3A%22%EC%A0%80%EB%A0%B4%ED%95%9C%20%EA%B0%80%EA%B2%A9%EA%B3%BC%20%EC%9E%90%EC%97%B0%EC%8A%A4%EB%9F%BD%EA%B3%A0%2C%EB%8B%A4%EC%96%91%ED%95%9C%20%EC%BB%A8%EC%85%89%EC%9D%98%20%EA%B0%80%EC%A1%B1%EC%82%AC%EC%A7%84%22%2C%22adInfoIcon%22%3A%7B%22url%22%3A%22https%3A%2F%2Ft1.daumcdn.net%2Fbiz%2Fui%2Fad%2FADmark%2Fi_mark_200803.png%22%2C%22width%22%3A15%2C%22height%22%3A15%7D%2C%22adInfoUrl%22%3A%22https%3A%2F%2Finfo.ad.daum.net%2Foptout.do%22%2C%22landingUrl%22%3A%22https%3A%2F%2Fka.ad.daum.net%2Fclick%2Fhttps%253A%252F%252Fgooddayfamily.modoo.at%253Futm_source%253Dkakao%2526utm_medium%253Dkeyword%2526utm_campaign%253DPREMIUM_LINK%2526k_campaign%253D204905324956180480%2526k_adgroup%253D204907230855749632%2526k_media%253DPREMIUM_LINK_CONTENT%2526k_creative%253D299491234234159105%2526k_creativelink%253D299491234301267969%2526k_rank%253D1%2FTpn9jrMaHHPsWmxn2b6D509B2Ro8XKbtxyumC9XAMww-i9YrIA9tugrkUI1bGb3T1oTA13HVdeKf2dZdOgs3Prt4wTzs_OQEpUC8vKLdykarOJrjsc1KfQFg3LFKWmq9m45hCW-HFJPml5aZNzBam4iNUDzP7_a8P9o4bX3AfTZD38q3TeMZlPtrGx6GclpHEKH563A1vlpfA0LZJl1Oe7p_KhkWzsAePChatr-By2xakfSHMVW_yGSfDEJ9rwyBFC4ublQzJh4T95UVHD7Q_Aj8NhzW840m5mlecjmtNMeEEic_l6KazfECW-BFUsETntSgQckz8naBhP9f5jPWxviBg5Wfq5hYrcsXyedlwgBCa_Jomp6Dipt8aa8VVn0%3D%3Fp%3DS4L7nF-SiQdWXHfTgtyt_g%22%2C%22useAdInfoIcon%22%3Atrue%2C%22useAdInfoUrl%22%3Atrue%2C%22events%22%3A%5B%7B%22type%22%3A%22viewable%22%2C%22url%22%3A%22https%3A%2F%2Fka.ad.daum.net%2Fvimp%2FTpn9jrMaHHPsWmxn2b6D509B2Ro8XKbtxyumC9XAMww-i9YrIA9tugrkUI1bGb3T1oTA13HVdeKf2dZdOgs3Prt4wTzs_OQEpUC8vKLdykarOJrjsc1KfQFg3LFKWmq9m45hCW-HFJPml5aZNzBam4iNUDzP_Pe-aIUQYn2IZ3pcmIPyEoQC%3Fp%3DS4L7nF-SiQdWXHfTgtyt_g%22%7D%2C%7B%22type%22%3A%22rendered%22%2C%22url%22%3A%22https%3A%2F%2Fka.ad.daum.net%2Frimp%2FTpn9jrMaHHPsWmxn2b6D509B2Ro8XKbtxyumC9XAMww-i9YrIA9tugrkUI1bGb3T1oTA13HVdeKf2dZdOgs3Prt4wTzs_OQEpUC8vKLdykarOJrjsc1KfQFg3LFKWmq9m45hCW-HFJPml5aZNzBam4iNUDzP_Pe-aIUQYn2IZ3pcmIPyEoQC%3Fp%3DS4L7nF-SiQdWXHfTgtyt_g%26ac%3DBoyu0-YsSDH7DS0gpOvC6lUS2kk6WPfrxGesDIfKKQgqiNIzKVxkuB7lBYMKF6LQ%22%7D%2C%7B%22type%22%3A%22rendered%22%2C%22url%22%3A%22https%3A%2F%2Fserv.ds.kakao.com%2Fdspr%2Fsync%3Fdspr%3DalHgmZ_rq05OpnPWXKqO-R1ac5RlRCnJcXuv3-y0kdpgzij0llwEs-AANFoorQTQkXOaLJXh-pvnE-FMabLIWHlMpQ7vH2NRLEBv1tMwKU7bxbRUeABOuBOJy7lussJNZlB5_6MxbUAcBeA6PwnS9J9En6b8yciKxQiFfQwwbkgYFMstJ364POVK5vnH3rvhTawKedTGJbvUYfstiP9UnFre_TK6XrnTmabC4xunlx5W2nqisGi6TzYDxbJ9GRgsFoSK3ErMsXrsUaz5uQSJPLarLKH44Cu9ar-WGMmuKbMoP8nRz7xjcd3Ue6ABpfwstBoD-yz5ky6fZHrWwcYVez0j6xqcm-cJJkSb35kJtMjk-3zkh_PAOFpB48xeY9YU_cBI7HoMUYmz8nO4mP4g1ULhlijA7mEruP1cCMso4krQEihEhH0VLXfRpNehfrabHVpzlGVEKclxe6_f7LSR2mDOKPSWXASz4AA0WiitBNDxuLOYKtDZge3vpFFhMiXP_gRRUWSmQgR8bFKHhT9Q0zRTuw3eRt2PEw_JnpwBr1NXPZBZKvBT0Kl429HC9fhzJ4e-V_rg2SRVx_XsNlfFsg%22%7D%5D%2C%22dspId%22%3A%22KEYWORDAD%22%2C%22bodyLink%22%3A%7B%22url%22%3A%22https%3A%2F%2Fka.ad.daum.net%2Fclick%2Fhttps%253A%252F%252Fgooddayfamily.modoo.at%253Futm_source%253Dkakao%2526utm_medium%253Dkeyword%2526utm_campaign%253DPREMIUM_LINK%2526k_campaign%253D204905324956180480%2526k_adgroup%253D204907230855749632%2526k_media%253DPREMIUM_LINK_CONTENT%2526k_creative%253D299491234234159105%2526k_creativelink%253D299491234301267969%2526k_rank%253D1%2FTpn9jrMaHHPsWmxn2b6D509B2Ro8XKbtxyumC9XAMww-i9YrIA9tugrkUI1bGb3T1oTA13HVdeKf2dZdOgs3Prt4wTzs_OQEpUC8vKLdykarOJrjsc1KfQFg3LFKWmq9m45hCW-HFJPml5aZNzBam4iNUDzP7_a8P9o4bX3AfTZD38q3TeMZlPtrGx6GclpHEKH563A1vlpfA0LZJl1Oe7p_KhkWzsAePChatr-By2xakfSHMVW_yGSfDEJ9rwyBFC4ublQzJh4T95UVHD7Q_Aj8NhzW840m5mlecjmtNMeEEic_l6KazfECW-BFUsETntSgQckz8naBhP9f5jPWxviBg5Wfq5hYrcsXyedlwgBCa_Jomp6Dipt8aa9EKWOdfOchGznkkqmiNEUsPpKBHWp3D_dZ8Na3IA%3D%3D%3Fp%3DS4L7nF-SiQdWXHfTgtyt_g%22%7D%2C%22displayUrl%22%3A%22https%3A%2F%2Fgooddayfamily.modoo.at%22%2C%22nasTemplateSeq%22%3A27%2C%22type%22%3A%22native%22%7D%5D" id="d083fbbb-2610-4cbb-9998-49c4603532fa"></iframe></div></div></div>
+                    </ins> 
+                    <script type="text/javascript" src="./유니티 파티클 시스템 (Particle System)- 속성_files/ba.min.js.다운로드" async=""></script>
+                </div>
+            </div><div class="container_postbtn #post_button_group">
+    <div class="postbtn_like">
+        
+<script>
+    window.ReactionButtonType = 'reaction';
+    window.ReactionApiUrl = '//notyu.tistory.com/reaction';
+    window.ReactionReqBody = {
+        entryId: 59    }
+</script>
+<div class="wrap_btn" id="reaction-59"><button class="btn_post uoc-icon"><div class="uoc-icon"><span class="ico_postbtn ico_like">좋아요</span><span class="txt_like uoc-count">4</span></div></button></div>
+<script src="./유니티 파티클 시스템 (Particle System)- 속성_files/reaction-button-container.min.js.다운로드"></script>
+        <div class="wrap_btn wrap_btn_share">
+    <button type="button" class="btn_post sns_btn btn_share" data-thumbnail-url="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcS3Fg8%2FbtqOnzhimS0%2FzaAOPsIidTr9ItApKcglg0%2Fimg.png" data-title="유니티 파티클 시스템 (Particle System)- 속성" data-description="1. 유니티 파티클 시스템 유니티 파티클 시스템은 작고 간단한 이미지나 메쉬를 대량으로 표현하는 데 사용하도록 만들어진 시스템이다. 파티클은 움직이도록 제어할 수도 있으며, 크기, 방향, 모양 등을 설정하여.." data-profile-image="https://t1.daumcdn.net/tistory_admin/static/manage/images/r3/default_L.png" data-profile-name="노튜" data-pc-url="https://notyu.tistory.com/59" data-relative-pc-url="/59" data-blog-title="Notyu">
+        <span class="ico_postbtn ico_share">공유하기</span>
+    </button>
+</div>
+                <div class="wrap_btn wrap_btn_etc" data-entry-id="59" data-entry-visibility="public" data-category-visibility="public">
+    <button type="button" class="btn_post btn_etc2"><span class="ico_postbtn ico_etc">글 요소</span></button>
+</div>
+    </div>
+    <button type="button" class="btn_menu_toolbar btn_subscription  #subscribe" data-blog-id="3675921" data-url="https://notyu.tistory.com/59" data-device="web_pc">
+    <em class="txt_state">구독하기</em>
+    <strong class="txt_tool_id">Notyu</strong>
+    <span class="img_common_tistory ico_check_type1"></span>
+</button>
+    <div class="postbtn_ccl" data-ccl-type="">
+    <a href="https://creativecommons.org/licenses//4.0/deed.ko" target="_blank" class="link_ccl" rel="license">
+        <span class="bundle_ccl">
+                    </span>
+    </a>
+</div>
+    <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <Work rdf:about="">
+        <license rdf:resource="http://creativecommons.org/licenses/by-/2.0/kr/" />
+    </Work>
+    <License rdf:about="http://creativecommons.org/licenses/by-/">
+        <permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+        <permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+        <requires rdf:resource="http://web.resource.org/cc/Notice"/>
+        <requires rdf:resource="http://web.resource.org/cc/Attribution"/>
+                    </License>
+</rdf:RDF>
+-->
+</div><div class="another_category another_category_color_gray">
+<h4>'<a href="https://notyu.tistory.com/category/%EC%9C%A0%EB%8B%88%ED%8B%B0">유니티</a>&nbsp;&gt;&nbsp;<a href="https://notyu.tistory.com/category/%EC%9C%A0%EB%8B%88%ED%8B%B0/%EA%B8%B0%EC%B4%88">기초</a>' 카테고리의 다른 글</h4>
+<table>
+<tbody><tr>
+<th>
+<a href="https://notyu.tistory.com/61?category=937660">유니티 데이터 저장 및 불러오기 (PlayerPrefs)</a>&nbsp;&nbsp;<span>(0)</span>
+</th>
+<td>
+2020.11.29</td>
+</tr>
+<tr>
+<th>
+<a href="https://notyu.tistory.com/60?category=937660">유니티 파티클 시스템(Particle System) - 활용</a>&nbsp;&nbsp;<span>(0)</span>
+</th>
+<td>
+2020.11.28</td>
+</tr>
+<tr>
+<th>
+<a href="https://notyu.tistory.com/59?category=937660" class="current">유니티 파티클 시스템 (Particle System)- 속성</a>&nbsp;&nbsp;<span>(1)</span>
+</th>
+<td>
+2020.11.27</td>
+</tr>
+<tr>
+<th>
+<a href="https://notyu.tistory.com/58?category=937660">유니티 애니메이션(Animation)</a>&nbsp;&nbsp;<span>(0)</span>
+</th>
+<td>
+2020.11.26</td>
+</tr>
+<tr>
+<th>
+<a href="https://notyu.tistory.com/57?category=937660">유니티 오디오 리스너(Audio Listener) &amp; 오디오 클립(Audio Clip)</a>&nbsp;&nbsp;<span>(0)</span>
+</th>
+<td>
+2020.11.25</td>
+</tr>
+<tr>
+<th>
+<a href="https://notyu.tistory.com/54?category=937660">유니티 UI 이벤트(Event)</a>&nbsp;&nbsp;<span>(0)</span>
+</th>
+<td>
+2020.11.23</td>
+</tr>
+</tbody></table></div></div>
+							</div>
+
+							
+								<div class="tags">
+									<h2>태그</h2>
+									<a href="https://notyu.tistory.com/tag/Unity%20Particle%20System" rel="tag">Unity Particle System</a>
+								</div>
+							
+
+							
+								<div class="related-articles">
+									<h2>관련글</h2>
+									<ul>
+										
+											<li>
+												<a href="https://notyu.tistory.com/61?category=937660">
+													<figure>
+														
+															<img src="./유니티 파티클 시스템 (Particle System)- 속성_files/saved_resource" alt="">
+														
+													</figure>
+													<span class="title">유니티 데이터 저장 및 불러오기 (PlayerPrefs)</span>
+												</a>
+											</li>
+										
+											<li>
+												<a href="https://notyu.tistory.com/60?category=937660">
+													<figure>
+														
+															<img src="./유니티 파티클 시스템 (Particle System)- 속성_files/saved_resource(1)" alt="">
+														
+													</figure>
+													<span class="title">유니티 파티클 시스템(Particle System) - 활용</span>
+												</a>
+											</li>
+										
+											<li>
+												<a href="https://notyu.tistory.com/58?category=937660">
+													<figure>
+														
+															<img src="./유니티 파티클 시스템 (Particle System)- 속성_files/saved_resource(2)" alt="">
+														
+													</figure>
+													<span class="title">유니티 애니메이션(Animation)</span>
+												</a>
+											</li>
+										
+											<li>
+												<a href="https://notyu.tistory.com/57?category=937660">
+													<figure>
+														
+															<img src="./유니티 파티클 시스템 (Particle System)- 속성_files/saved_resource(3)" alt="">
+														
+													</figure>
+													<span class="title">유니티 오디오 리스너(Audio Listener) &amp; 오디오 클립(Audio Clip)</span>
+												</a>
+											</li>
+										
+									</ul>
+								</div>
+							
+
+							<div class="comments">
+									<h2>댓글<span class="count"><span id="commentCount59_0">1</span></span></h2>
+									<div id="entry59Comment">
+										
+											<div class="comment-list">
+												<ul>
+													<a id="comment17210183"></a>
+														<li>
+															<div class="author-meta">
+																<img src="./유니티 파티클 시스템 (Particle System)- 속성_files/profile_default_00.png" class="avatar" alt="">
+																<span class="nickname">지가나는 나그네</span>
+																<span class="date">2022.02.03 17:06</span>
+																<span class="control">
+																	<button type="button">더보기</button>
+																	<div class="link">
+																		<a href="https://notyu.tistory.com/59#comment17210183">댓글주소</a>
+																		<a href="https://notyu.tistory.com/59#" onclick="deleteComment(17210183);return false">수정/삭제</a>
+																	</div>
+																</span>
+															</div>
+															<p>정리가 잘 되어있네요. 감사합니다.<br>
+															<a href="https://notyu.tistory.com/59#" onclick="commentComment(17210183); return false" class="reply">답글</a></p>
+															
+														</li>
+													
+												</ul>
+											</div>
+										
+
+										<form method="post" action="https://notyu.tistory.com/comment/add/59" onsubmit="return false" style="margin: 0">
+											<div class="comment-form">
+												
+													<div class="field">
+														
+															<input type="text" name="name" placeholder="이름" value="">
+															<input type="password" name="password" maxlength="8" placeholder="비밀번호" value="">
+														
+														<div class="secret">
+															<input type="checkbox" name="secret" id="secret">
+															<label for="secret" tabindex="0">비밀글</label>
+														</div>
+													</div>
+												
+												<textarea name="comment" cols="" rows="4" placeholder="여러분의 소중한 댓글을 입력해주세요."></textarea>
+												<div class="submit">
+													<button type="submit" class="btn" onclick="addComment(this, 59); return false;">등록</button>
+												</div>
+											</div>
+										</form>
+								</div><script type="text/javascript">loadedComments[59]=true;findFragmentAndHighlight(59)</script>
+							</div>
+						
+
+					
+
+				</div>
+
+				
+
+				
+
+				
+					<div class="pagination">
+						<a href="https://notyu.tistory.com/60" class="prev ">이전</a>
+						
+							<a href="https://notyu.tistory.com/70"><span>1</span></a>
+						
+							<a><span>···</span></a>
+						
+							<a href="https://notyu.tistory.com/63"><span>8</span></a>
+						
+							<a href="https://notyu.tistory.com/62"><span>9</span></a>
+						
+							<a href="https://notyu.tistory.com/61"><span>10</span></a>
+						
+							<a href="https://notyu.tistory.com/60"><span>11</span></a>
+						
+							<a><span class="selected">12</span></a>
+						
+							<a href="https://notyu.tistory.com/58"><span>13</span></a>
+						
+							<a href="https://notyu.tistory.com/57"><span>14</span></a>
+						
+							<a href="https://notyu.tistory.com/56"><span>15</span></a>
+						
+							<a href="https://notyu.tistory.com/55"><span>16</span></a>
+						
+							<a><span>···</span></a>
+						
+							<a href="https://notyu.tistory.com/2"><span>57</span></a>
+						
+						<a href="https://notyu.tistory.com/58" class="next ">다음</a>
+					</div>
+				
+
+				
+
+			</article>
+			<aside id="aside" class="sidebar">
+
+					<div class="sidebar-1">
+						                        <div class="revenue_unit_wrap ">
+                <div class="revenue_unit_item adfit">
+                    <div class="revenue_unit_info">250x250</div>
+                    <ins class="kakao_ad_area" style="display: inline-block; text-decoration: none; height: 250px; max-height: inherit; min-height: 250px; min-width: 250px; width: 250px;" data-ad-unit="DAN-qxfiohdrru48" data-ad-width="250" data-ad-height="250px" id="kakao_ad_LU8JAj"><div data-ad-creative-wrap="outer" class="adfit__html-banner" style="min-width: 250px; min-height: 250px;"><div data-ad-creative-wrap="inner" class="adfit__html-banner__inner" style="height: 250px;"><iframe id="a1624f20-3bbd-429d-9d39-65b62b952863" name="{&quot;usePrefersColorScheme&quot;:&quot;N&quot;,&quot;usePreferColorScheme&quot;:&quot;N&quot;,&quot;frameId&quot;:&quot;a1624f20-3bbd-429d-9d39-65b62b952863&quot;,&quot;frameName&quot;:&quot;a1624f20-3bbd-429d-9d39-65b62b952863&quot;}" title="광고" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" allowtransparency="true" style="min-width: 250px; width: 250px; min-height: 250px; height: 250px; background-color: rgb(255, 255, 255);" src="./유니티 파티클 시스템 (Particle System)- 속성_files/saved_resource.html"></iframe></div></div>
+                    </ins> 
+                    <script type="text/javascript" src="./유니티 파티클 시스템 (Particle System)- 속성_files/ba.min.js.다운로드" async=""></script>
+                </div>
+            </div>
+								<!-- 카테고리 -->
+								<nav class="category">
+									<ul class="tt_category">
+	<li class="">
+		<a class="link_tit" href="https://notyu.tistory.com/category">
+			분류 전체보기			
+					</a>
+
+				<ul class="category_list">
+							<li class="">
+					<a class="link_item" href="https://notyu.tistory.com/category/%EC%9C%A0%EB%8B%88%ED%8B%B0">
+						유니티						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="https://notyu.tistory.com/category/%EC%9C%A0%EB%8B%88%ED%8B%B0/%EA%B8%B0%EC%B4%88">
+									기초
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://notyu.tistory.com/category/%EC%9C%A0%EB%8B%88%ED%8B%B0/UI%28User%20Interface%29">
+									UI(User Interface)
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="https://notyu.tistory.com/category/%EC%9C%A0%EB%8B%88%ED%8B%B0/%EC%A4%91%EA%B8%89">
+									중급
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="https://notyu.tistory.com/category/%EA%B8%B0%ED%83%80">
+						기타						
+											</a>
+
+					
+				</li>
+					</ul>
+			</li>
+</ul>
+								</nav>
+							
+					</div>
+					<div class="sidebar-2">
+						
+								<!-- 공지사항 -->
+								
+									<div class="notice">
+										<h2>공지사항</h2>
+										<ul>
+											
+										</ul>
+									</div>
+								
+							
+								<!-- 최근글/인기글 -->
+								<div class="post-list tab-ui"><h2><a href="https://notyu.tistory.com/59#recent" class="current">최근글</a><a href="https://notyu.tistory.com/59#popular">인기글</a></h2>
+									<div id="recent" class="tab-list" style="display: block;">
+										
+										<ul>
+											
+												<li>
+													<a href="https://notyu.tistory.com/70">
+														
+															<img src="./유니티 파티클 시스템 (Particle System)- 속성_files/saved_resource(4)" alt="">
+														
+														<span class="title">유니티 안드로이드 빌드 (⋯</span>
+														<span class="date">2021.01.26</span>
+													</a>
+												</li>
+											
+
+												<li>
+													<a href="https://notyu.tistory.com/69">
+														
+														<span class="title">유니티 JSON 파일 저장 및⋯</span>
+														<span class="date">2021.01.23</span>
+													</a>
+												</li>
+											
+
+												<li>
+													<a href="https://notyu.tistory.com/68">
+														
+															<img src="./유니티 파티클 시스템 (Particle System)- 속성_files/saved_resource(5)" alt="">
+														
+														<span class="title">유니티 JSON 파일 저장 및⋯</span>
+														<span class="date">2021.01.23</span>
+													</a>
+												</li>
+											
+
+												<li>
+													<a href="https://notyu.tistory.com/67">
+														
+															<img src="./유니티 파티클 시스템 (Particle System)- 속성_files/saved_resource(6)" alt="">
+														
+														<span class="title">유니티 코드 디버깅 (Debu⋯</span>
+														<span class="date">2021.01.16</span>
+													</a>
+												</li>
+											
+
+												<li>
+													<a href="https://notyu.tistory.com/66">
+														
+															<img src="./유니티 파티클 시스템 (Particle System)- 속성_files/saved_resource(7)" alt="">
+														
+														<span class="title">유니티 UI 드래그앤드롭 (⋯</span>
+														<span class="date">2021.01.10</span>
+													</a>
+												</li>
+											
+										</ul>
+									</div>
+									<div id="popular" class="tab-list" style="display: none;">
+										
+										<ul>
+											
+												<li>
+													<a href="https://notyu.tistory.com/35">
+														
+															<img src="./유니티 파티클 시스템 (Particle System)- 속성_files/saved_resource(8)" alt="">
+														
+														<span class="title">유니티 프리팹(Prefab)과⋯</span>
+														<span class="date">2020.11.02</span>
+													</a>
+												</li>
+											
+
+												<li>
+													<a href="https://notyu.tistory.com/23">
+														
+														<span class="title">유니티 오브젝트 이동 [기⋯</span>
+														<span class="date">2020.05.01</span>
+													</a>
+												</li>
+											
+
+												<li>
+													<a href="https://notyu.tistory.com/25">
+														
+														<span class="title">유니티 캐릭터 이동 및 회⋯</span>
+														<span class="date">2020.05.04</span>
+													</a>
+												</li>
+											
+
+												<li>
+													<a href="https://notyu.tistory.com/68">
+														
+															<img src="./유니티 파티클 시스템 (Particle System)- 속성_files/saved_resource(5)" alt="">
+														
+														<span class="title">유니티 JSON 파일 저장 및⋯</span>
+														<span class="date">2021.01.23</span>
+													</a>
+												</li>
+											
+
+												<li>
+													<a href="https://notyu.tistory.com/26">
+														
+														<span class="title">유니티 카메라 이동 및 회⋯</span>
+														<span class="date">2020.05.05</span>
+													</a>
+												</li>
+											
+										</ul>
+									</div>
+								</div>
+							
+								<!-- 최근댓글 -->
+								<div class="recent-comment">
+									<h2>최근댓글</h2>
+									<ul>
+										
+											<li><a href="https://notyu.tistory.com/59#comment17210183">정리가 잘 되어있네요. 감사⋯</a></li>
+										
+
+											<li><a href="https://notyu.tistory.com/70#comment17201582">감사합니다.</a></li>
+										
+
+											<li><a href="https://notyu.tistory.com/3#comment17186691">저는 유니티 허브에서 모듈⋯</a></li>
+										
+
+											<li><a href="https://notyu.tistory.com/70#comment17117048">감사용!!!~</a></li>
+										
+									</ul>
+								</div>
+							
+								<!-- Facebook/Twitter -->
+								<div class="social-list tab-ui">
+									
+									
+								</div>
+							
+						
+								<!-- 태그 -->
+								<div class="tags">
+									<h2>태그</h2>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20Move%20Object">Unity Move Object</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20Object%20Rotation">Unity Object Rotation</a>
+									
+										<a href="https://notyu.tistory.com/tag/JSON%20Binary%20format">JSON Binary format</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20Prefab">Unity Prefab</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20move%20Character">Unity move Character</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20JSON">Unity JSON</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20Frame">Unity Frame</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20Invoke">Unity Invoke</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20Coroutine">Unity Coroutine</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20Update">Unity Update</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20Audio%20Clip">Unity Audio Clip</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20Rotate%20Character">Unity Rotate Character</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20animation%20vs%20Animator">Unity animation vs Animator</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20GameObject">Unity GameObject</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20Object%20pooling">Unity Object pooling</a>
+									
+										<a href="https://notyu.tistory.com/tag/%EC%9C%A0%EB%8B%88%ED%8B%B0%20JSON%20%ED%8C%8C%EC%9D%BC">유니티 JSON 파일</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20Snow">Unity Snow</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20ScriptableObject">Unity ScriptableObject</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20Particle%20System">Unity Particle System</a>
+									
+										<a href="https://notyu.tistory.com/tag/android">android</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity">Unity</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20Debugging">Unity Debugging</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20PlayerPrefs">Unity PlayerPrefs</a>
+									
+										<a href="https://notyu.tistory.com/tag/%EC%9C%A0%EB%8B%88%ED%8B%B0%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98">유니티 애니메이션</a>
+									
+										<a href="https://notyu.tistory.com/tag/unity%20API%20Level%2029%2030">unity API Level 29 30</a>
+									
+										<a href="https://notyu.tistory.com/tag/%EA%B5%AC%EA%B8%80%20%ED%94%8C%EB%A0%88%EC%9D%B4%20%EA%B2%8C%EC%9E%84%20%EC%84%9C%EB%B9%84%EC%8A%A4">구글 플레이 게임 서비스</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20Resource.load">Unity Resource.load</a>
+									
+										<a href="https://notyu.tistory.com/tag/%EC%9C%A0%EB%8B%88%ED%8B%B0%20JSON">유니티 JSON</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20UI%20Drag%20and%20Drop">Unity UI Drag and Drop</a>
+									
+										<a href="https://notyu.tistory.com/tag/Unity%20GameObject.Find%28%29">Unity GameObject.Find()</a>
+									
+								</div>
+							
+								<!-- 전체 방문자 -->
+								<div class="count">
+									<h2>전체 방문자</h2>
+									<p class="total">181,351</p>
+									<p>Today : 420</p>
+									<p>Yesterday : 569</p>
+								</div>
+							
+								<!-- 소셜 채널 -->
+								<div class="social-channel">
+									<ul>
+										
+										
+										
+										
+									</ul>
+								</div>
+							
+					</div>
+				</aside>
+		</div>
+	</section>
+	<hr>
+	<footer id="footer">
+		<div class="inner">
+			<div class="order-menu">
+				
+				
+				
+				
+			</div>
+			<a href="https://notyu.tistory.com/59#" class="page-top">TOP</a>
+			<p class="meta">TEL. 02.1234.5678 / 경기 성남시 분당구 판교역로</p>
+			<p class="copyright">© Kakao Corp.</p>
+		</div>
+	</footer>
+</div>
+
+<script src="./유니티 파티클 시스템 (Particle System)- 속성_files/script.js.다운로드"></script>
+<script src="./유니티 파티클 시스템 (Particle System)- 속성_files/search_dragselection.min.js.다운로드"></script>
+
+	<script>
+	    lightbox.option({
+			"fadeDuration": 200,
+		    "resizeDuration": 200,
+		    "wrapAround": false,
+			"albumLabel": "%1 / %2",
+			"fitImagesInViewport":true ,
+			"stopEvent": false
+	    })
+	</script>            <script type="text/javascript" src="./유니티 파티클 시스템 (Particle System)- 속성_files/tiara.min.js.다운로드"></script>
+            <script type="text/javascript">window.tiara = {"svcDomain":"user.tistory.com","section":"\uae00\ubdf0","trackPage":"\uae00\ubdf0_\ubcf4\uae30","page":"\uae00\ubdf0","key":"3675921-59","customProps":{"userId":0,"blogId":"3675921","role":"guest","filterTarget":false,"trackPage":"\uae00\ubdf0_\ubcf4\uae30","entryId":"59"},"entry":{"entryId":"59","categoryName":"\uae30\ucd08","categoryId":"937660","author":"4224128","authorId":"4224128","image":"4224128","plink":"\/59","tags":["Unity Particle System"],"key":"3675921-59"},"sentryDsn":"https:\/\/a53520229cd744e798d42900d76b0e2a@aem-ingest.onkakao.net\/713","kakaoAppKey":"b8aef3eeb03fa312b81795386484f051","appUserId":null};</script>
+            <script type="text/javascript" src="./유니티 파티클 시스템 (Particle System)- 속성_files/tiara.min.js(1).다운로드" defer=""></script>
+                        <script type="text/javascript">
+                window.roosevelt_params_queue = window.roosevelt_params_queue || [{channel_id: 'dk', channel_label: 'tistory'}];
+            </script>
+            <script type="text/javascript" src="./유니티 파티클 시스템 (Particle System)- 속성_files/roosevelt_dk_bt.js.다운로드" async=""></script><script type="text/javascript">if(window.console!=undefined){setTimeout(console.log.bind(console,"%cTISTORY","font:8em Arial;color:#EC6521;font-weight:bold"),0);setTimeout(console.log.bind(console,"%c  나를 표현하는 블로그","font:2em sans-serif;color:#333;"),0);}</script><iframe style="position:absolute;width:1px;height:1px;left:-100px;top:-100px" src="./유니티 파티클 시스템 (Particle System)- 속성_files/api.html" id="editEntry"></iframe>            <div class="#menubar menu_toolbar ">
+                                            <h2 class="screen_out">티스토리툴바</h2>
+                                            <div class="btn_tool">
+                    <button class="btn_menu_toolbar btn_subscription  #subscribe" data-blog-id="3675921" data-url="https://notyu.tistory.com" data-device="web_pc">
+                        <strong class="txt_tool_id">Notyu</strong>
+                        <em class="txt_state">구독하기</em>
+                        <span class="img_common_tistory ico_check_type1"></span>
+                    </button>
+                </div>
+                                       </div>
+                                       <div class="#menubar menu_toolbar "></div>
+                                       <script type="text/javascript" src="./유니티 파티클 시스템 (Particle System)- 속성_files/menubar.min.js.다운로드"></script>        <div class="layer_tooltip">
+            <div class="inner_layer_tooltip">
+                <p class="desc_g"></p>
+            </div>
+        </div>
+        <div id="tistoryEtcLayer" class="layer_post" style="display: none;"></div><div id="tistorySnsLayer" class="layer_post" style="display: none;"><div class="bundle_post"><a href="https://notyu.tistory.com/59#none" class="btn_mark" data-service="facebook"><span class="ico_sns ico_fb"></span>페이스북으로 공유</a><a href="https://notyu.tistory.com/59#none" class="btn_mark" data-service="kakaotalk"><span class="ico_sns ico_kt"></span>카카오톡으로 공유</a><a href="https://notyu.tistory.com/59#none" class="btn_mark" data-service="kakaostory"><span class="ico_sns ico_ks"></span>카카오스토리로 공유</a><a href="https://notyu.tistory.com/59#none" class="btn_mark" data-service="twitter"><span class="ico_sns ico_tw"></span>트위터로 공유</a><a href="https://notyu.tistory.com/59#none" class="btn_mark" data-service="url"><span class="ico_sns ico_url"></span>URL 복사</a><span class="ico_postbtn ico_arrbt"></span></div></div>
+<div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href="https://notyu.tistory.com/59"></a><a class="lb-next" href="https://notyu.tistory.com/59"></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div></body></html>
